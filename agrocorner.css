@@ -1,0 +1,12 @@
+:root {
+  --dark-grey: rgb(40, 40, 40);
+  --light-grey: rgb(250, 250, 250);
+}
+
+.agrocorner {
+  font-family: Inter, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  background-color: var(--dark-grey);
+  color: var(--light-grey);
+}

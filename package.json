@@ -1,0 +1,29 @@
+{
+	"name": "@rbnlffl/agrocorner-theme",
+	"version": "0.1.0",
+	"description": "A beautiful minimalist theme for Automad",
+	"main": "agrocorner.js",
+	"repository": "https://github.com/robinloeffel/agrocorner-theme.git",
+	"homepage": "https://github.com/robinloeffel/agrocorner-theme",
+	"bugs": "https://github.com/robinloeffel/agrocorner-theme/issues",
+	"author": "Robin Löffel (https://robinloeffel.ch) <hi@robinloeffel.ch>",
+	"license": "MIT",
+	"keywords": [
+	  "automad",
+	  "cms",
+	  "theme",
+	  "minimalist"
+	],
+	"publishConfig": {
+	  "access": "public"
+	},
+	"devDependencies": {
+    "eslint": "^7.25.0",
+    "eslint-config-sweet": "^5.0.0",
+    "stylelint": "^13.13.0",
+    "stylelint-config-standard": "^22.0.0"
+  },
+	"scripts": {
+    "start": "php -S localhost:9000 -t ../.."
+  }
+  }

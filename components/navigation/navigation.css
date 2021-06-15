@@ -1,0 +1,43 @@
+:root {
+  --navigation-background-color: rgba(40, 40, 40, 0.95);
+  --navigation-shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--navigation-background-color);
+  backdrop-filter: blur(25px);
+  font-weight: bold;
+  box-shadow: 0 2px 4px var(--navigation-shadow-color);
+  z-index: 9;
+}
+
+.navigation-list {
+  padding: 0 60px;
+  margin: 0;
+  display: flex;
+  height: 100px;
+}
+
+.navigation-item {
+  display: inline-flex;
+  align-self: center;
+}
+
+.navigation-item:first-of-type {
+  margin-right: auto;
+}
+
+.navigation-logo {
+  height: 40px;
+}
+
+.navigation-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-flex;
+  padding: 12.5px;
+}
