@@ -1,7 +1,16 @@
 .hero {
+  height: 660px;
   position: relative;
   display: grid;
-  height: 660px;
+
+  /* 60px as a margin, two cells in the center */
+  grid-template-columns: 60px 1fr 1fr 60px;
+
+  /*
+    100px to take the header into account,
+    then the regular 60px and one cell
+  */
+  grid-template-rows: 100px 60px 1fr 60px;
 }
 
 .hero-image {
@@ -9,4 +18,32 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.hero-text {
+  margin: 0;
+  padding: 50px;
+  grid-column: 3;
+  grid-row: 3;
+  align-self: center;
+  z-index: 1;
+  background-color: var(--light-grey-translucent);
+  color: var(--dark-grey);
+}
+
+.hero-tagline {
+  display: block;
+  font-size: var(--font-size-bigger);
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+.hero-cta::before {
+  content: '->';
+}
+
+.hero-cta {
+  font-size: var(--font-size-big);
+  font-weight: bold;
+  color: var(--red);
 }

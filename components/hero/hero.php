@@ -2,11 +2,11 @@
 
 <div class="hero">
 	<p class="hero-text">
-		<span>
+		<span class="hero-tagline">
       @{ tagline | def('Wir sind Ihr Partner für alle Gemüsesorten und helfen Ihnen von A wie Aubergine bis Z wie Zucchetti!') }
     </span>
 		<a href="@{ urlButton | def('#') }" class="hero-cta">
-      -> @{ labelButton | def('Unsere Produkte') }
+      @{ labelButton | def('Unsere Produkte') }
 		</a>
 	</p>
   <@ with @{ imageHero } @>
