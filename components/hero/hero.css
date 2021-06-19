@@ -38,10 +38,6 @@
   margin-bottom: 0.5em;
 }
 
-.hero-cta::before {
-  content: '->';
-}
-
 .hero-cta {
   font-size: var(--font-size-big);
   font-weight: bold;
