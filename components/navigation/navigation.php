@@ -4,7 +4,8 @@
 	<nav class="navigation-bar">
 		<ul class="navigation-list">
       <@ newPagelist {
-        excludeHidden: true
+        type: 'children',
+        context: '/'
       } @>
       <@foreach in pagelist @>
         <li class="navigation-item">
