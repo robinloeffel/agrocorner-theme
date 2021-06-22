@@ -35,10 +35,28 @@
   text-decoration: none;
   display: inline-flex;
   padding: 12.5px;
+  position: relative;
 }
 
 .navigation-link::before {
   content: none;
+}
+
+.navigation-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: var(--red);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease-in-out;
+}
+
+.navigation-link:hover::after {
+  transform: scaleY(1);
 }
 
 .navigation-item:first-of-type .navigation-link {
