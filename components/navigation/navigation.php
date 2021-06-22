@@ -3,21 +3,24 @@
 <div class="navigation">
 	<nav class="navigation-bar">
 		<ul class="navigation-list">
+      <li class="navigation-item">
+        <@ with "/" @>
+          <a href="@{ url }" class="navigation-link">
+            <@ with @{ imageLogo } @>
+              <img src="@{ :file }" alt="@{ :caption }" class="navigation-logo">
+            <@ end @>
+          </a>
+        <@ end @>
+      </li>
+
       <@ newPagelist {
         type: 'children',
+        sort: 'date asc',
         context: '/'
       } @>
       <@foreach in pagelist @>
         <li class="navigation-item">
-          <a href="@{ url }" class="navigation-link">
-            <@ if @{ :i } = 1 @>
-              <@ with @{ imageLogo } @>
-                <img src="@{ :file }" alt="@{ :caption }" class="navigation-logo">
-              <@ end @>
-            <@ else @>
-              @{ title }
-            <@ end @>
-          </a>
+          <a href="@{ url }" class="navigation-link">@{ title }</a>
         </li>
       <@ end @>
 		</ul>
