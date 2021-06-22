@@ -2,15 +2,8 @@
   height: 660px;
   position: relative;
   display: grid;
-
-  /* 60px as a margin, two cells in the center */
-  grid-template-columns: 60px 1fr 1fr 60px;
-
-  /*
-    100px to take the header into account,
-    then the regular 60px and one cell
-  */
-  grid-template-rows: 100px 60px 1fr 60px;
+  padding: 160px 60px 60px;
+  grid-template-columns: 1fr 1fr;
 }
 
 .hero-image {
@@ -23,8 +16,7 @@
 .hero-text {
   margin: 0;
   padding: 50px;
-  grid-column: 3;
-  grid-row: 3;
+  grid-column: 2;
   align-self: center;
   z-index: 1;
   background-color: var(--light-grey-translucent);
