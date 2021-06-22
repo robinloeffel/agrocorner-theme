@@ -40,3 +40,7 @@ a {
 a::before {
   content: '->';
 }
+
+a[class*=am-]::before {
+  content: none;
+}
