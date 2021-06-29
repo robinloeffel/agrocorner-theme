@@ -21,7 +21,5 @@
       @{ labelButton | def('Unsere Produkte') }
 		</a>
 	</p>
-
-	<script src="/packages/agrocorner-theme/components/hero/hero.js"></script>
-	<link rel="stylesheet" href="/packages/agrocorner-theme/components/hero/hero.css">
 </div>
+<link rel="stylesheet" href="/packages/agrocorner-theme/components/hero/hero.css">
