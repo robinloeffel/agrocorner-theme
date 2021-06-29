@@ -1,0 +1,42 @@
+.footer {
+  border-top: 3px solid var(--red);
+  padding: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  font-weight: 500;
+}
+
+.footer-column-heading {
+  font-size: var(--font-size-big);
+  font-weight: bold;
+  display: block;
+  margin-bottom: 1em;
+  line-height: var(--line-height-heading);
+}
+
+.footer-column-paragraph-conserve-breaks {
+  white-space: pre-line;
+}
+
+.footer-column-paragraph:not(:last-of-type) {
+  margin-bottom: 1em;
+}
+
+.footer-navigation-item {
+  display: block;
+}
+
+.footer-map {
+  width: 100%;
+  border: 0;
+}
+
+.footer a {
+  color: var(--red);
+}
+
+.footer a[href*=tel]::before,
+.footer a[href*=mailto]::before {
+  content: none;
+}
