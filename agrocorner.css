@@ -38,9 +38,9 @@ a {
 }
 
 a::before {
-  content: '->';
+  content: '-> ';
 }
 
 a[class*=am-]::before {
-  content: none;
+  content: inherit;
 }
