@@ -1,0 +1,9 @@
+.author-content {
+  padding: 60px 60px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.editable {
+  grid-column: 2 / span 2;
+}

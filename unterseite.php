@@ -8,6 +8,7 @@
 <body class="agrocorner">
 	<@ components/navigation/navigation.php @>
   <@ components/banner/banner.php @>
+  <@ components/author-content/author-content.php @>
   <@ components/page-tiles/page-tiles.php @>
   <@ components/footer/footer.php @>
 </body>
