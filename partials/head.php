@@ -11,7 +11,7 @@
 	  <link rel="shortcut icon" href="@{ :file }">
   <@ end @>
 	<link rel="canonical" href="https://agrocorner.ch">
-	<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="https://unpkg.com/@fontsource/inter/latin.css">
   <link rel="stylesheet" href="https://unpkg.com/@csstools/normalize.css/evergreen.css">
 	<link rel="stylesheet" href="/packages/agrocorner-theme/agrocorner.css">
 	<script src="/packages/agrocorner-theme/agrocorner.js" defer></script>
