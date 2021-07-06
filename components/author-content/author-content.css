@@ -4,6 +4,23 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.author-content * + .am-block {
+  margin-top: 1em;
+}
+
+.author-content img {
+  max-width: 100%;
+}
+
+.author-content a {
+  color: var(--red);
+}
+
+.author-content a::before {
+  content: none;
+}
+
 .editable {
   grid-column: 2 / span 2;
+  font-weight: 500;
 }
