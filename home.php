@@ -5,7 +5,7 @@
 
 <@ partials/head.php @>
 
-<body class="agrocorner">
+<body class="agrocorner" lang="de-ch">
 	<@ components/navigation/navigation.php @>
   <@ components/hero/hero.php @>
   <@ components/page-tiles/page-tiles.php @>
