@@ -32,6 +32,8 @@
   font-size: var(--font-size-bigger);
   font-weight: bold;
   line-height: var(--line-height-heading);
+  margin: 25px;
+  text-align: center;
 }
 
 .page-title::after {
