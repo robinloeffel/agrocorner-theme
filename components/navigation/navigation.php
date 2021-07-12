@@ -11,6 +11,9 @@
         </a>
       <@ end @>
     </li>
+    <li class="navigation-item">
+      <button class="navigation-toggle-mobile" data-navigation-toggle></button>
+    </li>
 
     <@ newPagelist {
       type: 'children',
@@ -25,3 +28,4 @@
   </ul>
 </nav>
 <link rel="stylesheet" href="/packages/agrocorner-theme/components/navigation/navigation.css">
+<script src="/packages/agrocorner-theme/components/navigation/navigation.js"></script>

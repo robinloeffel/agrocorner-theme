@@ -40,3 +40,16 @@
 .footer a[href*=mailto]::before {
   content: none;
 }
+
+@media screen and (max-width: 1100px) {
+  .footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    padding: 40px;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,3 +1,10 @@
 .banner {
   height: 300px;
 }
+
+@media screen and (max-width: 700px) {
+  .banner {
+    display: none;
+    background-image: none;
+  }
+}
