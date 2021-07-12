@@ -31,7 +31,6 @@ html {
   line-height: var(--line-height);
   background-color: var(--dark-grey);
   color: var(--light-grey);
-  hyphens: manual;
 }
 
 a {
