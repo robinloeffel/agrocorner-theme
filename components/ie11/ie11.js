@@ -1,7 +1,5 @@
 /* eslint-disable */
-var isIe = window.navigator.userAgent.indexOf('MSIE') > 0;
-
-if (!isIe) {
+if (window.navigator.userAgent.indexOf('MSIE') > 0) {
   document.body.style.overflow = 'hidden';
 
   // inject stylesheet
