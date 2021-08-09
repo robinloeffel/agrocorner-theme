@@ -8,6 +8,7 @@
 	<meta name="keywords" content="">
 	<meta name="author" content="">
 	<meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://unpkg.com">
   <@ with @{ imageFavicon } @>
 	  <link rel="shortcut icon" href="@{ :file }">
   <@ end @>
