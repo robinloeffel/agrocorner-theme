@@ -30,7 +30,7 @@
   color: var(--red);
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .hero {
     margin-top: 75px;
     height: auto;
@@ -44,4 +44,8 @@
     background-color: inherit;
     padding: 40px;
   }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+
 }

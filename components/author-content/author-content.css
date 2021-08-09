@@ -27,8 +27,13 @@
 
 @media screen and (max-width: 700px) {
   .author-content {
-    margin-top: 90px;
-    padding: 40px;
+    margin-top: 75px;
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .author-content {
+    padding: 40px;
   }
 }
