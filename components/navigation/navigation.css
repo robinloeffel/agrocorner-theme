@@ -92,11 +92,15 @@
   .navigation {
     padding: 0 40px;
     transition: transform 0.5s ease-in-out;
-    transform: translateY(calc(-6 * 90px));
+    transform: translateY(calc(-6 * 75px));
   }
 
   .navigation-expanded {
     transform: translateY(0);
+  }
+
+  .navigation-logo {
+    height: 30px;
   }
 
   .navigation-list {
@@ -106,7 +110,7 @@
 
   .navigation-item {
     flex-basis: 100%;
-    height: 90px;
+    height: 75px;
     align-items: center;
   }
 
