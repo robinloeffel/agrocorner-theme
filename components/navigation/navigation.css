@@ -16,9 +16,10 @@
 }
 
 .navigation-list {
-  margin: 0;
+  margin: auto;
   display: flex;
   height: 100px;
+  max-width: 1440px;
 }
 
 .navigation-item {
@@ -57,14 +58,6 @@
 
 .navigation-link:hover::after {
   transform: scaleY(1);
-}
-
-.navigation-item:first-of-type .navigation-link {
-  margin-left: -12.5px;
-}
-
-.navigation-item:last-of-type .navigation-link {
-  margin-right: -12.5px;
 }
 
 .navigation-logo {

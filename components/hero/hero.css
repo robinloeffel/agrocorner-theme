@@ -1,9 +1,8 @@
 .hero {
-  height: 660px;
+  aspect-ratio: 16 / 9;
   position: relative;
   display: grid;
-  padding: 60px;
-  margin-top: 100px;
+  padding: 100px 60px 60px;
   grid-template-columns: 1fr 1fr;
 }
 
@@ -32,7 +31,6 @@
 
 @media screen and (max-width: 1000px) {
   .hero {
-    margin-top: 75px;
     height: auto;
     background: none;
     grid-template-columns: 1fr;
@@ -44,8 +42,4 @@
     background-color: inherit;
     padding: 40px;
   }
-}
-
-@media screen and (min-width: 700px) and (max-width: 1000px) {
-
 }
