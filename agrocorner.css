@@ -33,6 +33,11 @@ html {
   color: var(--light-grey);
 }
 
+body {
+  max-width: 1440px;
+  margin: auto;
+}
+
 a {
   color: inherit;
 }
