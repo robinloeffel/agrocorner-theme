@@ -32,7 +32,7 @@
 @media screen and (max-width: 1000px) {
   .hero {
     aspect-ratio: auto;
-    height: 90vh;
+    height: auto;
     background: none;
     grid-template-columns: 1fr;
     padding: 115px 40px 40px;
