@@ -24,6 +24,6 @@
     "stylelint-config-standard": "^22.0.0"
   },
 	"scripts": {
-    "start": "php -S localhost:9000 -t ../.."
+    "start": "php -S 0.0.0.0:9000 -t ../.."
   }
 }
