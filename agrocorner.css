@@ -7,7 +7,7 @@
   --red: rgb(230, 58, 65);
 
   /* typography */
-  --font-family: 'Inter', sans-serif;
+  --font-family: 'Inter', system-ui, sans-serif;
   --font-size: 18px;
   --font-size-small: 16px;
   --font-size-smaller: 14px;
