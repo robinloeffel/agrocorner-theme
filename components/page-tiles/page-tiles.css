@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
   hyphens: auto;
+  -webkit-hyphens: auto;
 }
 
 .page-tile {
