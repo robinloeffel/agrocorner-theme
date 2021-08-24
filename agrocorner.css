@@ -5,6 +5,7 @@
   --light-grey: rgb(250, 250, 250);
   --light-grey-translucent: rgba(250, 250, 250, 0.8);
   --red: rgb(230, 58, 65);
+  --shadow-color: rgba(0, 0, 0, 0.2);
 
   /* typography */
   --font-family: 'Inter', system-ui, sans-serif;

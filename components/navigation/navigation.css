@@ -1,23 +1,19 @@
-:root {
-  --navigation-shadow-color: rgba(0, 0, 0, 0.2);
-}
-
 .navigation {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  background-color: var(--dark-grey-translucent);
-  backdrop-filter: blur(25px);
+  background-color: var(--dark-grey);
   font-weight: bold;
-  box-shadow: 0 2px 4px var(--navigation-shadow-color);
+  box-shadow: 0 2px 4px var(--shadow-color);
   z-index: 9;
   padding: 0 60px;
 }
 
-@supports not (backdrop-filter: blur) {
+@supports (backdrop-filter: blur()) {
   .navigation {
-    background-color: var(--dark-grey);
+    background-color: var(--dark-grey-translucent);
+    backdrop-filter: blur(25px);
   }
 }
 
