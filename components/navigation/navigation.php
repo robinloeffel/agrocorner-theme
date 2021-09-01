@@ -17,7 +17,6 @@
 
     <@ newPagelist {
       type: 'children',
-      sort: 'date asc',
       context: '/'
     } @>
     <@foreach in pagelist @>
@@ -27,5 +26,3 @@
     <@ end @>
   </ul>
 </nav>
-<link rel="stylesheet" href="/packages/agrocorner-theme/components/navigation/navigation.css">
-<script src="/packages/agrocorner-theme/components/navigation/navigation.js"></script>

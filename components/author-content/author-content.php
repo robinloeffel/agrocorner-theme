@@ -6,5 +6,4 @@
     @{ +content }
   </div>
 </div>
-<link rel="stylesheet" href="/packages/agrocorner-theme/components/author-content/author-content.css">
 <@ end @>

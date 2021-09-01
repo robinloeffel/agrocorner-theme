@@ -29,7 +29,6 @@
       <@ end @>
       <@ newPagelist {
         type: 'children',
-        sort: 'date asc',
         context: '/'
       } @>
       <@foreach in pagelist @>
@@ -40,4 +39,3 @@
     </ul>
   </div>
 </footer>
-<link rel="stylesheet" href="/packages/agrocorner-theme/components/footer/footer.css">

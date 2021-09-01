@@ -7,7 +7,4 @@
     @{ +splashMessage }
   </div>
 </div>
-
-<link rel="stylesheet" href="/packages/agrocorner-theme/components/splash-message/splash-message.css">
-<script src="/packages/agrocorner-theme/components/splash-message/splash-message.js"></script>
 <@ end @>

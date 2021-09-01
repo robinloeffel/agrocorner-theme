@@ -22,4 +22,3 @@
 		</a>
 	</p>
 </div>
-<link rel="stylesheet" href="/packages/agrocorner-theme/components/hero/hero.css">

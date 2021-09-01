@@ -2,9 +2,7 @@
 
 <!doctype html>
 <html>
-
 <@ partials/head.php @>
-
 <body class="agrocorner" lang="de">
   <@ components/navigation/navigation.php @>
   <@ components/hero/hero.php @>

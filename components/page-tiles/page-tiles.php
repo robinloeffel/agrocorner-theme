@@ -22,5 +22,4 @@
       </li>
     <@ end @>
   </ul>
-  <link rel="stylesheet" href="/packages/agrocorner-theme/components/page-tiles/page-tiles.css">
 <@ end @>

@@ -10,6 +10,4 @@
       }
     </style>
   <@ end @>
-  lol
 </div>
-<link rel="stylesheet" href="/packages/agrocorner-theme/components/banner/banner.css">
