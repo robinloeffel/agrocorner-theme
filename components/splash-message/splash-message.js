@@ -1,19 +1,26 @@
+const hideMessage = !!window.sessionStorage.getItem('hideSplashMessage');
 const message = document.querySelector('.splash-message');
-const closeButton = document.querySelector('.splash-message-close');
 
-const close = () => {
-  message.classList.add('splash-message-fading-out');
+if (hideMessage) {
+  message.remove();
+} else {
+  const closeButton = document.querySelector('.splash-message-close');
 
-  message.addEventListener('transitionend', () => {
-    message.remove();
-  });
-};
+  const close = () => {
+    message.classList.add('splash-message-fading-out');
+    window.sessionStorage.setItem('hideSplashMessage', true);
 
-const show = () => {
-  window.requestAnimationFrame(() => {
-    message.classList.add('splash-message-visible');
-  });
-};
+    message.addEventListener('transitionend', () => {
+      message.remove();
+    });
+  };
 
-closeButton.addEventListener('click', close);
-window.addEventListener('load', show);
+  const show = () => {
+    window.requestAnimationFrame(() => {
+      message.classList.add('splash-message-visible');
+    });
+  };
+
+  closeButton.addEventListener('click', close);
+  window.addEventListener('load', show);
+}
