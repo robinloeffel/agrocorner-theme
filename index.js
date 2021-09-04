@@ -1,5 +1,6 @@
 import './components/navigation/navigation';
 import './components/splash-message/splash-message';
+import './components/page-tiles/page-tiles';
 
 import './css/base.css';
 import './css/user-editable.css';

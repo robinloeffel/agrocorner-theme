@@ -3,7 +3,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
   padding: 60px;
-  hyphens: auto;
 }
 
 .page-tile {
