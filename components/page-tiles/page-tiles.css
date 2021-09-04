@@ -17,7 +17,6 @@
 }
 
 .page-tile::after {
-  display: inline-block;
   padding-bottom: 100%;
   content: '';
 }
@@ -45,7 +44,6 @@
   margin: 25px;
   font-weight: bold;
   font-size: var(--font-size-bigger);
-  line-height: var(--line-height-heading);
   text-align: center;
 }
 
