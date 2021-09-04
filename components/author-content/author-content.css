@@ -4,23 +4,11 @@
   padding: 60px 60px 0;
 }
 
-.author-content * + .am-block {
-  margin-top: 1em;
-}
-
-.author-content img {
-  max-width: 100%;
-}
-
-.author-content a {
-  color: var(--red);
-}
-
 .author-content a::before {
   content: none;
 }
 
-.editable {
+.author-content .user-editable {
   grid-column: 2 / span 2;
   font-weight: 500;
 }

@@ -2,7 +2,7 @@
 
 <@ if @{ +content } @>
 <div class="author-content">
-  <div class="editable">
+  <div class="user-editable">
     @{ +content }
   </div>
 </div>

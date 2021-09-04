@@ -1,0 +1,19 @@
+.user-editable * {
+  margin: 0;
+}
+
+.user-editable a {
+  color: var(--red);
+}
+
+.user-editable a::before {
+  content: '';
+}
+
+.user-editable img {
+  max-width: 100%;
+}
+
+.user-editable :not(:last-child) {
+  margin-bottom: 0.5em;
+}

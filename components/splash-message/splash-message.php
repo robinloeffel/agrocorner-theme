@@ -4,7 +4,9 @@
 <div class="splash-message">
   <div class="splash-message-content">
     <button class="splash-message-close"></button>
-    @{ +splashMessage }
+    <div class="user-editable">
+      @{ +splashMessage }
+    </div>
   </div>
 </div>
 <@ end @>
