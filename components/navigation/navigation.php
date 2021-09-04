@@ -21,7 +21,13 @@
     } @>
     <@foreach in pagelist @>
       <li class="navigation-item">
-        <a href="@{ url }" class="navigation-link">@{ title }</a>
+        <a
+          href="@{ url }"
+          class="
+            navigation-link
+            <@ if @{ :currentPath } @>navigation-link-current<@ end @>
+          "
+        >@{ title }</a>
       </li>
     <@ end @>
   </ul>

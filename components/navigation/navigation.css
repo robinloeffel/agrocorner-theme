@@ -58,6 +58,7 @@
   content: '';
 }
 
+.navigation-link-current::after,
 .navigation-link:hover::after {
   transform: scaleY(1);
 }
