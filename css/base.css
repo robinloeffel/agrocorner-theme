@@ -50,3 +50,9 @@ a::before {
 a[class*=am-]::before {
   content: inherit;
 }
+
+h1,
+h2,
+h3 {
+  line-height: var(--line-height-heading);
+}
