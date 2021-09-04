@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/packages/agrocorner-theme/dist/agrocorner.css">
 	<script src="/packages/agrocorner-theme/dist/agrocorner.js" defer></script>
   <script>
-    if (window.navigator.userAgent.indexOf('Trident') > -1) {
+    if ('documentMode' in document) {
       window.location = '/packages/agrocorner-theme/pages/ie11/ie11.html';
     }
   </script>

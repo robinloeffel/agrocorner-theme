@@ -1,14 +1,14 @@
 .splash-message {
   position: fixed;
   z-index: 9;
-  inset: 0;
   display: grid;
   align-content: center;
   justify-content: center;
-  transition: opacity 0.5s ease-in-out;
-  opacity: 0;
-  pointer-events: none;
   background-color: var(--dark-grey-translucent);
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  pointer-events: none;
+  inset: 0;
 }
 
 .splash-message-visible {
@@ -24,17 +24,17 @@
   position: absolute;
   top: 25px;
   right: 25px;
+  padding: 8px 16px;
+  color: inherit;
+  font-size: 1.5em;
   background: none;
   border: 0;
-  color: inherit;
   cursor: pointer;
-  font-size: 1.5em;
-  padding: 8px 16px;
 }
 
 .splash-message-close::before {
-  content: '×';
   display: inline;
+  content: '×';
 }
 
 .splash-message-content {
@@ -45,8 +45,8 @@
 
 @supports (backdrop-filter: blur()) {
   .splash-message-content {
-    backdrop-filter: blur(25px);
     background-color: var(--light-grey-translucent);
+    backdrop-filter: blur(25px);
   }
 }
 

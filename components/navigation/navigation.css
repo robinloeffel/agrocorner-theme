@@ -1,13 +1,13 @@
 .navigation {
   position: fixed;
   top: 0;
-  left: 0;
   right: 0;
-  background-color: var(--dark-grey);
-  font-weight: bold;
-  box-shadow: 0 2px 4px var(--shadow-color);
+  left: 0;
   z-index: 9;
   padding: 0 60px;
+  font-weight: bold;
+  background-color: var(--dark-grey);
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 @supports (backdrop-filter: blur()) {
@@ -18,10 +18,10 @@
 }
 
 .navigation-list {
-  margin: auto;
   display: flex;
-  height: 100px;
   max-width: 1440px;
+  height: 100px;
+  margin: auto;
 }
 
 .navigation-item {
@@ -34,11 +34,11 @@
 }
 
 .navigation-link {
-  color: inherit;
-  text-decoration: none;
+  position: relative;
   display: inline-flex;
   padding: 12.5px;
-  position: relative;
+  color: inherit;
+  text-decoration: none;
 }
 
 .navigation-link::before {
@@ -46,16 +46,16 @@
 }
 
 .navigation-link::after {
-  content: '';
   position: absolute;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
   height: 3px;
   background-color: var(--red);
   transform: scaleY(0);
   transform-origin: bottom;
   transition: transform 0.4s ease-in-out;
+  content: '';
 }
 
 .navigation-link:hover::after {
@@ -67,27 +67,27 @@
 }
 
 .navigation-toggle-mobile {
+  display: none;
+  color: inherit;
   font: inherit;
-  cursor: pointer;
   background: 0;
   border: 0;
-  color: inherit;
-  display: none;
+  cursor: pointer;
   pointer-events: none;
 }
 
 .navigation-toggle-mobile::after {
   display: inline-flex;
-  content: '->';
   transform: rotate(90deg);
   transition: transform 0.5s ease-in-out;
+  content: '->';
 }
 
 @media screen and (max-width: 1000px) {
   .navigation {
     padding: 0 40px;
-    transition: transform 0.5s ease-in-out;
     transform: translateY(calc(-6 * 75px));
+    transition: transform 0.5s ease-in-out;
   }
 
   .navigation-expanded {
@@ -105,8 +105,8 @@
 
   .navigation-item {
     flex-basis: 100%;
-    height: 75px;
     align-items: center;
+    height: 75px;
   }
 
   .navigation-item:nth-of-type(1) {

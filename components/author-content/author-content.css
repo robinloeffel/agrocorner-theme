@@ -1,7 +1,7 @@
 .author-content {
-  padding: 60px 60px 0;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 60px 60px 0;
 }
 
 .author-content * + .am-block {
@@ -27,8 +27,8 @@
 
 @media screen and (max-width: 700px) {
   .author-content {
-    margin-top: 75px;
     grid-template-columns: 1fr;
+    margin-top: 75px;
   }
 }
 
