@@ -7,8 +7,8 @@
     <p class="footer-column-paragraph footer-column-paragraph-conserve-breaks">@{ textContactAddress }</p>
     <p class="footer-column-paragraph">
       Telefon: <a href="tel:@{ phoneNumber }">@{ phoneNumber }</a><br>
-      Fax: <a href="tel:@{ faxNumber }">@{ faxNumber }</a><br>
-      E-Mail: <a href="mailto:@{ emailAddress }">@{ emailAddress }</a>
+      E-Mail: <a href="mailto:@{ emailAddress }">@{ emailAddress }</a><br>
+      <a href="@{ instagramUrl }">Instagram</a> / <a href="@{ facebookUrl }">Facebook</a>
     </p>
   </div>
   <div class="footer-column">
