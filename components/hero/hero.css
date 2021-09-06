@@ -33,7 +33,7 @@
   .hero {
     grid-template-columns: 1fr;
     height: auto;
-    padding: 115px 40px 40px;
+    padding: calc(40px + var(--mobile-navigation-item-height)) 40px 40px;
     background: none !important;
     aspect-ratio: auto;
   }

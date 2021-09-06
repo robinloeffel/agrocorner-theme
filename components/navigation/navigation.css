@@ -1,3 +1,7 @@
+:root {
+  --mobile-navigation-item-height: 70px;
+}
+
 .navigation {
   position: fixed;
   top: 0;
@@ -85,14 +89,14 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .navigation {
-    padding: 0 40px;
-    transform: translateY(calc(-6 * 75px));
-    transition: transform 0.5s ease-in-out;
+  .navigation.navigation-expanded {
+    transform: translateY(0);
   }
 
-  .navigation-expanded {
-    transform: translateY(0);
+  .navigation {
+    padding: 0 40px;
+    transform: translateY(calc(-1 * ((var(--mobile-navigation-items) - 2) * var(--mobile-navigation-item-height))));
+    transition: transform 0.5s ease-in-out;
   }
 
   .navigation-logo {
@@ -107,7 +111,7 @@
   .navigation-item {
     flex-basis: 100%;
     align-items: center;
-    height: 75px;
+    height: var(--mobile-navigation-item-height);
   }
 
   .navigation-item:nth-of-type(1) {
@@ -120,16 +124,17 @@
     justify-content: flex-end;
   }
 
-  .navigation-item:not(:nth-of-type(1)):not(:nth-of-type(2)) {
-    border-bottom: 1px solid var(--light-grey-translucent);
-  }
-
   .navigation-link {
     padding: 0;
   }
 
   .navigation-item:first-of-type .navigation-link {
     margin-left: 0;
+  }
+
+  .navigation-item:nth-of-type(1) .navigation-link::after,
+  .navigation-item:nth-of-type(2) .navigation-link::after {
+    content: none;
   }
 
   .navigation-toggle-mobile {

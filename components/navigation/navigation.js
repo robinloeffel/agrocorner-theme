@@ -8,4 +8,14 @@ const handleClick = () => {
   );
 };
 
+const injectStyle = () => {
+  const style = document.createElement('style');
+  const items = navigation.querySelectorAll('.navigation-item').length;
+
+  style.textContent = `:root{--mobile-navigation-items:${items}}`;
+  document.body.append(style);
+};
+
 toggle.addEventListener('click', handleClick);
+
+injectStyle();
