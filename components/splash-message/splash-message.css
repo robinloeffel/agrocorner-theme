@@ -41,7 +41,7 @@
   position: relative;
   width: 100%;
   max-width: 680px;
-  max-height: 100vh;
+  max-height: 90vh;
   padding: 50px;
   overflow-y: auto;
   color: var(--dark-grey);
