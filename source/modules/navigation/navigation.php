@@ -5,7 +5,7 @@
     <li class="navigation-item">
       <@ with "/" @>
         <a href="@{ url }" class="navigation-link">
-        <img src="/packages/agrocorner-theme/img/agrocorner-logo.svg" alt="" class="navigation-logo">
+        <img src="/packages/agrocorner-theme/source/img/agrocorner-logo.svg" alt="" class="navigation-logo">
         </a>
       <@ end @>
     </li>

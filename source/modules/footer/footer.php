@@ -1,7 +1,7 @@
 <?php defined('AUTOMAD') or die('Direct access not permitted!'); ?>
 
 <footer class="footer">
-  <img src="/packages/agrocorner-theme/img/agrocorner-pflaenzli.svg" alt="" class="footer-decoration">
+  <img src="/packages/agrocorner-theme/source/img/agrocorner-pflaenzli.svg" alt="" class="footer-decoration">
   <div class="footer-column">
     <span class="footer-column-heading">@{ contact | def('Kontakt') }</span>
     <p class="footer-column-paragraph footer-column-paragraph-conserve-breaks">@{ textContactAddress }</p>

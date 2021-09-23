@@ -10,8 +10,10 @@ const setup = async () => {
   await del('dist');
 
   await build({
-    entryPoints: [ '.' ],
-    entryNames: 'agrocorner',
+    entryPoints: [
+      'source/agrocorner.js',
+      'source/agrocorner.css'
+    ],
     outdir: 'dist',
     bundle: true,
     incremental: true,
