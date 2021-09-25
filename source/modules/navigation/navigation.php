@@ -3,7 +3,7 @@
 <nav class="navigation">
   <ul class="navigation-list">
     <li class="navigation-item">
-      <@ with "/" @>
+      <@ with '/' @>
         <a href="@{ url }" class="navigation-link">
         <img src="/packages/agrocorner-theme/source/img/agrocorner-logo.svg" alt="" class="navigation-logo">
         </a>
@@ -12,7 +12,6 @@
     <li class="navigation-item">
       <button class="navigation-toggle-mobile" data-navigation-toggle></button>
     </li>
-
     <@ newPagelist {
       type: 'children',
       context: '/'
