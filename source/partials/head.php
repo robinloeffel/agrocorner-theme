@@ -13,7 +13,7 @@
 	<meta name="author" content="@{ metaAuthor }">
 	<meta name="robots" content="index, follow">
 	<link rel="shortcut icon" href="@{ imageFavicon }">
-  <link rel="canonical" href="@{ url }">
+  <link rel="canonical" href="https://agrocorner.ch@{ url }">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap">
 	<link rel="stylesheet" href="/packages/agrocorner-theme/dist/agrocorner.css">
 	<script src="/packages/agrocorner-theme/dist/agrocorner.js" defer></script>
