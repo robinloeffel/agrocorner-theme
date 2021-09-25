@@ -47,8 +47,19 @@
 }
 
 .footer a[href*=tel]::before,
-.footer a[href*=mailto]::before {
+.footer a[href*=mailto]::before,
+.footer .social-link::before {
   content: none;
+}
+
+.footer .social-link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.footer .social-icon {
+  max-height: 18px;
+  margin-right: 4px;
 }
 
 @media screen and (max-width: 1100px) {

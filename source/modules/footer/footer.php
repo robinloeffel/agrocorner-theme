@@ -8,7 +8,13 @@
     <p class="footer-column-paragraph">
       Telefon: <a href="tel:@{ phoneNumber }">@{ phoneNumber }</a><br>
       E-Mail: <a href="mailto:@{ emailAddress }">@{ emailAddress }</a><br>
-      <a href="@{ instagramUrl }">Instagram</a> / <a href="@{ facebookUrl }">Facebook</a>
+      <a href="@{ instagramUrl }" class="social-link">
+        <img src="/packages/agrocorner-theme/source/img/instagram.svg" alt="" class="social-icon">
+        Instagram
+      </a> / <a href="@{ facebookUrl }" class="social-link">
+        <img src="/packages/agrocorner-theme/source/img/facebook.svg" alt="" class="social-icon">
+        Facebook
+      </a>
     </p>
   </div>
   <div class="footer-column">
