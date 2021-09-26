@@ -5,12 +5,22 @@
     <li class="navigation-item">
       <@ with '/' @>
         <a href="@{ url }" class="navigation-link">
-        <img src="/packages/agrocorner-theme/source/img/agrocorner-logo.svg" alt="" class="navigation-logo">
+          <img
+            src="/packages/agrocorner-theme/source/img/agrocorner-logo.svg"
+            class="navigation-logo"
+            loading="lazy"
+            alt=""
+          >
+          <span class="screen-reader-only">@{ title }</span>
         </a>
       <@ end @>
     </li>
     <li class="navigation-item">
-      <button class="navigation-toggle-mobile" data-navigation-toggle></button>
+      <button
+        class="navigation-toggle-mobile"
+        aria-label="Navigation ein- und ausblenden"
+        data-navigation-toggle
+      ></button>
     </li>
     <@ newPagelist {
       type: 'children',

@@ -1,7 +1,12 @@
 <?php defined('AUTOMAD') or die('Direct access not permitted!'); ?>
 
 <footer class="footer">
-  <img src="/packages/agrocorner-theme/source/img/agrocorner-pflaenzli.svg" alt="" class="footer-decoration">
+  <img
+    src="/packages/agrocorner-theme/source/img/agrocorner-pflaenzli.svg"
+    class="footer-decoration"
+    loading="lazy"
+    alt=""
+  >
   <div class="footer-column">
     <span class="footer-column-heading">@{ contact | def('Kontakt') }</span>
     <p class="footer-column-paragraph footer-column-paragraph-conserve-breaks">@{ textContactAddress }</p>
@@ -9,10 +14,20 @@
       Telefon: <a href="tel:@{ phoneNumber }">@{ phoneNumber }</a><br>
       E-Mail: <a href="mailto:@{ emailAddress }">@{ emailAddress }</a><br>
       <a href="@{ instagramUrl }" class="social-link">
-        <img src="/packages/agrocorner-theme/source/img/instagram.svg" alt="" class="social-icon">
+        <img
+          src="/packages/agrocorner-theme/source/img/instagram.svg"
+          class="social-icon"
+          loading="lazy"
+          alt=""
+        >
         Instagram
       </a> / <a href="@{ facebookUrl }" class="social-link">
-        <img src="/packages/agrocorner-theme/source/img/facebook.svg" alt="" class="social-icon">
+        <img
+          src="/packages/agrocorner-theme/source/img/facebook.svg"
+          class="social-icon"
+          loading="lazy"
+          alt=""
+        >
         Facebook
       </a>
     </p>
@@ -24,7 +39,12 @@
   </div>
   <div class="footer-column">
     <span class="footer-column-heading">@{ where | def('So finden Sie uns') }</span>
-    <iframe src="https://www.google.ch/maps/embed?pb=!1m14!1m8!1m3!1d21768.213447271377!2d7.1588054074706875!3d47.000449072392065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x980966be92540831!2sAgrocorner%20AG!5e0!3m2!1sen!2sch!4v1624976527488!5m2!1sen!2sch" loading="lazy" class="footer-map"></iframe>
+    <iframe
+      src="https://www.google.ch/maps/embed?pb=!1m14!1m8!1m3!1d21768.213447271377!2d7.1588054074706875!3d47.000449072392065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x980966be92540831!2sAgrocorner%20AG!5e0!3m2!1sen!2sch!4v1624976527488!5m2!1sen!2sch"
+      loading="lazy"
+      class="footer-map"
+      title="AgroCorner auf Google Maps"
+    ></iframe>
   </div>
   <div class="footer-column">
     <span class="footer-column-heading">@{ overview | def('Übersicht') }</span>

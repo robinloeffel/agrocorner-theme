@@ -6,8 +6,10 @@
 <body>
 	<@ modules/navigation/navigation.php @>
   <@ modules/banner/banner.php @>
-  <@ modules/author-content/author-content.php @>
-  <@ modules/page-tiles/page-tiles.php @>
+  <main>
+    <@ modules/author-content/author-content.php @>
+    <@ modules/page-tiles/page-tiles.php @>
+  </main>
   <@ modules/footer/footer.php @>
 </body>
 </html>
