@@ -7,8 +7,10 @@
     background-position: @{ heroFocusPoint | def('center') };
   "
 >
-  <div class="hero-text">
-    <h1 class="hero-tagline">@{ tagline }</h1>
-    <a href="@{ urlButton }" class="hero-cta">@{ labelButton }</a>
-  </div>
+  <@ if @{ tagline } @>
+    <div class="hero-text">
+      <h1 class="hero-tagline">@{ tagline }</h1>
+      <a href="@{ urlButton }" class="hero-cta">@{ labelButton }</a>
+    </div>
+  <@ end @>
 </header>
