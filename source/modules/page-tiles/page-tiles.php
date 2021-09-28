@@ -4,7 +4,7 @@
   sort: 'date asc',
   type: 'children'
 } @>
-<@ if @{ :pagelistCount } > 1 @>
+<@ if @{ :pagelistCount } > 0 @>
   <ul class="page-tiles">
     <@foreach in pagelist @>
       <li
