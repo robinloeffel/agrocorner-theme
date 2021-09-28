@@ -15,7 +15,7 @@
       >
         <a class="page-link" href="@{ url }">
           <h2 class="page-title">@{ title }</h2>
-          <@ with @{ imageHero } @>
+          <@ with @{ imagePageTile } @>
             <img src="@{ :file }" alt="@{ :caption }" class="page-hero" loading="lazy">
           <@ end @>
         </a>
