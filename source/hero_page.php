@@ -7,6 +7,7 @@
   <@ modules/navigation/navigation.php @>
   <@ modules/hero/hero.php @>
   <main>
+    <@ modules/author-content/author-content.php @>
     <@ modules/page-tiles/page-tiles.php @>
     <@ modules/splash-message/splash-message.php @>
   </main>
