@@ -4,7 +4,8 @@ const del = require('del');
 const open = require('open');
 const postcss = require('esbuild-postcss');
 
-const development = process.argv.includes('--dev');
+const prod = process.argv.includes('--prod');
+const dist = process.argv.includes('--dist');
 
 const setup = async () => {
   await del('dist');
@@ -16,15 +17,19 @@ const setup = async () => {
     ],
     outdir: 'dist',
     bundle: true,
-    incremental: true,
-    sourcemap: development,
-    minify: !development,
-    watch: development,
+    sourcemap: !prod && !dist,
+    minify: prod || dist,
+    watch: !dist,
     plugins: [ postcss() ]
   });
 
   exec('php -S 0.0.0.0:9000 -t ../..');
-  open('http://localhost:9000');
+
+  if (dist) {
+    open('dist');
+  } else {
+    open('http://localhost:9000');
+  }
 };
 
 setup();

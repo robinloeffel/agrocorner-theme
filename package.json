@@ -32,7 +32,8 @@
 	},
 	"scripts": {
 		"start": "yarn dev",
-		"dev": "node build.js --dev",
-		"prod": "node build"
+		"dev": "node build",
+		"prod": "node build --prod",
+		"dist": "node build --dist"
 	}
 }
