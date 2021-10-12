@@ -1,7 +1,6 @@
 <?php defined('AUTOMAD') or die('Direct access not permitted!'); ?>
 
 <@ newPagelist {
-  sort: 'date asc',
   type: 'children'
 } @>
 <@ if @{ :pagelistCount } > 0 @>
