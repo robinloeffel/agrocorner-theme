@@ -24,10 +24,6 @@
   padding-bottom: calc(50% - 20px);
 }
 
-.page-link::before {
-  content: none;
-}
-
 .page-link {
   position: absolute;
   display: grid;

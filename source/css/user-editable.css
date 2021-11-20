@@ -6,10 +6,6 @@
   color: var(--red);
 }
 
-.user-editable a::before {
-  content: "";
-}
-
 .user-editable img {
   max-width: 100%;
 }

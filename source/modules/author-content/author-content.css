@@ -4,10 +4,6 @@
   padding: 60px;
 }
 
-.author-content a::before {
-  content: none;
-}
-
 .user-editable {
   grid-column: 2 / span 3;
 }

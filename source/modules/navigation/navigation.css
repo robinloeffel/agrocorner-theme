@@ -45,10 +45,6 @@
   text-decoration: none;
 }
 
-.navigation-link::before {
-  content: none;
-}
-
 .navigation-link::after {
   position: absolute;
   right: 0;

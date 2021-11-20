@@ -45,14 +45,6 @@ a {
   color: inherit;
 }
 
-a::before {
-  content: "-> ";
-}
-
-a[class*=am-]::before {
-  content: inherit;
-}
-
 h1,
 h2,
 h3 {

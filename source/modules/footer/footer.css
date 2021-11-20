@@ -46,12 +46,6 @@
   color: var(--red);
 }
 
-.footer a[href*="tel"]::before,
-.footer a[href*="mailto"]::before,
-.footer .social-link::before {
-  content: none;
-}
-
 .footer .social-link {
   display: inline-flex;
   align-items: center;
