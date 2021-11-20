@@ -1,0 +1,8 @@
+:root {
+  --am-button-margin: 0;
+  --am-button-border-radius: 5px;
+  --am-button-border-color: var(--light-grey-translucent);
+  --am-button-hover-color: var(--red);
+  --am-button-hover-background: var(--light-grey-translucent);
+  --am-button-hover-border-color: var(--light-grey-translucent);
+}
