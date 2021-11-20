@@ -59,7 +59,7 @@
   transform: scaleY(0);
   transform-origin: bottom;
   transition: transform 0.4s ease-in-out;
-  content: '';
+  content: "";
 }
 
 .navigation-link-current::after,
@@ -85,7 +85,7 @@
   display: inline-flex;
   transform: rotate(90deg);
   transition: transform 0.5s ease-in-out;
-  content: '->';
+  content: "->";
 }
 
 @media screen and (max-width: 1000px) {

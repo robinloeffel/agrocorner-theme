@@ -17,7 +17,7 @@
 
 .page-tile::after {
   padding-bottom: 100%;
-  content: '';
+  content: "";
 }
 
 .page-tile-span-two::after {

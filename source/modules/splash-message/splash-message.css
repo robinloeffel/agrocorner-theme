@@ -34,7 +34,7 @@
 
 .splash-message-close::before {
   display: inline;
-  content: '×';
+  content: "×";
 }
 
 .splash-message-content {

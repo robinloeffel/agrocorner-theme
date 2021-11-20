@@ -7,7 +7,7 @@
 }
 
 .user-editable a::before {
-  content: '';
+  content: "";
 }
 
 .user-editable img {

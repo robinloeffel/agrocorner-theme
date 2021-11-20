@@ -46,8 +46,8 @@
   color: var(--red);
 }
 
-.footer a[href*=tel]::before,
-.footer a[href*=mailto]::before,
+.footer a[href*="tel"]::before,
+.footer a[href*="mailto"]::before,
 .footer .social-link::before {
   content: none;
 }
