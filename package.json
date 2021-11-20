@@ -1,6 +1,6 @@
 {
 	"name": "@rbnlffl/agrocorner-theme",
-	"version": "0.1.0",
+	"version": "1.0.1",
 	"description": "A minimalist theme for Automad",
 	"repository": "https://github.com/robinloeffel/agrocorner-theme.git",
 	"homepage": "https://github.com/robinloeffel/agrocorner-theme",
@@ -18,17 +18,17 @@
 	},
 	"devDependencies": {
 		"del": "^6.0.0",
-		"esbuild": "^0.13.4",
+		"esbuild": "^0.13.14",
 		"esbuild-postcss": "^0.0.4",
-		"eslint": "^8.0.0",
+		"eslint": "^8.2.0",
 		"eslint-config-sweet": "^6.0.0",
-		"open": "^8.3.0",
-		"postcss": "^8.3.9",
-		"postcss-preset-env": "^6.7.0",
-		"stylelint": "^13.13.0",
+		"open": "^8.4.0",
+		"postcss": "^8.3.11",
+		"postcss-preset-env": "^7.0.1",
+		"stylelint": "^14.1.0",
 		"stylelint-config-rational-order": "^0.1.2",
-		"stylelint-config-standard": "^22.0.0",
-		"stylelint-order": "^4.1.0"
+		"stylelint-config-standard": "^24.0.0",
+		"stylelint-order": "^5.0.0"
 	},
 	"scripts": {
 		"start": "yarn dev",
