@@ -13,17 +13,14 @@
 		"theme",
 		"minimalist"
 	],
-	"dependencies": {
-		"hyphen": "^1.6.4"
-	},
 	"devDependencies": {
 		"del": "^6.0.0",
-		"esbuild": "^0.13.14",
+		"esbuild": "^0.14.2",
 		"esbuild-postcss": "^0.0.4",
-		"eslint": "^8.2.0",
-		"eslint-config-sweet": "^6.0.0",
+		"eslint": "^8.4.1",
+		"eslint-config-sweet": "^7.0.0",
 		"open": "^8.4.0",
-		"postcss": "^8.3.11",
+		"postcss": "^8.4.4",
 		"postcss-preset-env": "^7.0.1",
 		"stylelint": "^14.1.0",
 		"stylelint-config-rational-order": "^0.1.2",
