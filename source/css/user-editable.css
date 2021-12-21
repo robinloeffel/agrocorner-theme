@@ -9,3 +9,10 @@
 .user-editable hr {
   color: var(--shadow-color);
 }
+
+.user-editable h1,
+.user-editable h2,
+.user-editable h3,
+.user-editable h4 {
+  hyphens: auto;
+}
