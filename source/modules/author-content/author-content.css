@@ -11,7 +11,6 @@
 @media screen and (max-width: 700px) {
   .author-content {
     grid-template-columns: 1fr;
-    margin-top: var(--mobile-navigation-item-height);
   }
 
   .user-editable {

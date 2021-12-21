@@ -2,8 +2,8 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  height: 80vh;
-  padding: 160px 60px 60px;
+  height: 70vh;
+  padding: 60px;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -37,9 +37,13 @@
   .hero {
     grid-template-columns: 1fr;
     height: auto;
-    padding: calc(40px + var(--mobile-navigation-item-height)) 40px 40px;
+    padding: 40px;
     background: none !important;
     aspect-ratio: auto;
+  }
+
+  .hero-no-text {
+    display: none;
   }
 
   .hero-text {

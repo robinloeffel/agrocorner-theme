@@ -39,6 +39,7 @@ html {
 body {
   max-width: 1440px;
   margin: auto;
+  margin-top: 100px;
 }
 
 a {
@@ -49,4 +50,10 @@ h1,
 h2,
 h3 {
   line-height: var(--line-height-heading);
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    margin-top: 70px;
+  }
 }

@@ -1,7 +1,10 @@
 <?php defined('AUTOMAD') or die('Direct access not permitted!'); ?>
 
 <header
-  class="hero"
+  class="
+    hero
+    <@ if !@{ tagline } @>hero-no-text<@ end @>
+  "
   style="
     background-image: url(@{ imageHero });
     background-position: @{ heroFocusPoint | def('center') };
