@@ -1,11 +1,3 @@
-.user-editable * {
-  margin: 0;
-}
-
-.user-editable :not(:last-child) {
-  margin-bottom: 0.5em;
-}
-
 .user-editable a {
   color: var(--red);
 }
@@ -15,6 +7,5 @@
 }
 
 .user-editable hr {
-  margin: 0.5em auto;
   color: var(--shadow-color);
 }

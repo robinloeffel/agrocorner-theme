@@ -5,4 +5,5 @@
   --am-button-hover-color: var(--red);
   --am-button-hover-background: var(--light-grey-translucent);
   --am-button-hover-border-color: var(--light-grey-translucent);
+  --am-block-margin-top: 0.5em;
 }
