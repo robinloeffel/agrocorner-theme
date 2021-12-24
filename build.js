@@ -4,7 +4,7 @@ const del = require('del');
 const open = require('open');
 const postcss = require('esbuild-postcss');
 
-const prod = process.argv.includes('--prod');
+const production = process.argv.includes('--prod');
 const dist = process.argv.includes('--dist');
 
 const setup = async () => {
@@ -17,18 +17,20 @@ const setup = async () => {
     ],
     outdir: 'dist',
     bundle: true,
-    sourcemap: !prod && !dist,
-    minify: prod || dist,
+    sourcemap: !production && !dist,
+    minify: production || dist,
     watch: !dist,
     plugins: [ postcss() ]
   });
 
-  exec('php -S 0.0.0.0:9000 -t ../..');
-
   if (dist) {
-    open('dist');
+    open('./dist');
   } else {
-    open('http://localhost:9000');
+    const server = exec('php -S 0.0.0.0:9000 -t ../..');
+
+    server.on('spawn', () => {
+      open('http://localhost:9000');
+    });
   }
 };
 
