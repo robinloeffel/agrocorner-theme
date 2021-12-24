@@ -1,10 +1,39 @@
+/* overrides for variables provieded by automad */
 :root {
-  --am-button-margin: 0;
-  --am-button-border-radius: 5px;
-  --am-button-border-color: var(--light-grey-translucent);
-  --am-button-hover-color: var(--red);
-  --am-button-hover-background: var(--light-grey-translucent);
-  --am-button-hover-border-color: var(--light-grey-translucent);
   --am-block-margin-top: 1em;
   --am-block-max-width: none;
+  --am-button-background: var(--light-grey);
+  --am-button-border-color: var(--light-grey);
+  --am-button-border-radius: 5px;
+  --am-button-color: var(--red);
+  --am-button-hover-background: transparent;
+  --am-button-hover-border-color: var(--light-grey);
+  --am-button-hover-color: var(--light-grey);
+  --am-button-margin: 0;
+  --am-input-border: 2px solid var(--light-grey-translucent);
+  --am-input-focus-border: 2px solid var(--light-grey);
+}
+
+/* overrides for non-configurable elements provided by automad */
+.am-slider-dots,
+.am-slider-prev,
+.am-slider-next {
+  cursor: pointer;
+}
+
+.am-slider-dots a::before {
+  border: none;
+  opacity: 0.5;
+}
+
+.am-slider-prev:hover,
+.am-slider-next:hover {
+  /* important needed bc of a rule by automad */
+  opacity: 1 !important;
+}
+
+/* higher specificity to override general user-editable styles */
+.am-slider .am-slider-prev,
+.am-slider .am-slider-next {
+  color: inherit;
 }
