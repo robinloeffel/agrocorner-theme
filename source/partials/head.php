@@ -11,7 +11,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="@{ metaDescription }">
 	<meta name="keywords" content="@{ metaKeywords }">
-	<meta name="author" content="@{ metaAuthor }">
+	<meta name="author" content="@{ metaAuthor | def('AgroCorner AG') }">
 	<meta name="robots" content="index, follow">
 	<link rel="shortcut icon" href="@{ imageFavicon }">
   <link rel="canonical" href="https://agrocorner.ch@{ url }">
