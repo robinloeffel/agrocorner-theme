@@ -1,7 +1,7 @@
 {
 	"name": "@rbnlffl/agrocorner-theme",
-	"version": "1.0.1",
-	"description": "A minimalist theme for Automad",
+	"version": "1.0.2",
+	"description": "A custom theme for Automad",
 	"repository": "https://github.com/robinloeffel/agrocorner-theme.git",
 	"homepage": "https://github.com/robinloeffel/agrocorner-theme",
 	"bugs": "https://github.com/robinloeffel/agrocorner-theme/issues",
@@ -10,12 +10,11 @@
 	"keywords": [
 		"automad",
 		"cms",
-		"theme",
-		"minimalist"
+		"theme"
 	],
 	"devDependencies": {
 		"del": "^6.0.0",
-		"esbuild": "^0.14.8",
+		"esbuild": "^0.14.9",
 		"esbuild-postcss": "^0.0.4",
 		"eslint": "^8.5.0",
 		"eslint-config-sweet": "^7.0.0",
