@@ -1,15 +1,13 @@
-<p align="center">
-  <img src="source/theme.png" width="600">
-</p>
+[![agrocorner.ch](source/theme.jpg)](https://agrocorner.ch)
 
 # `agrocorner-theme`
 
-> A custom-made theme for [AgroCorner](https://agrocorner.ch), built on [Automad](https://automad.org). 🖌
+> a custom-tailored theme for [agrocorner](https://agrocorner.ch), built on [automad](https://automad.org). 🖌
 
-Toolchain consisting of `eslint`, `esbuild`, `postcss`; written in PHP, vanilla CSS and vanilla JS.
+toolchain consisting of `eslint`, `esbuild`, `postcss`; written in php, vanilla css and vanilla js.
 
-## Local requirements
+## local requirements
 
-* PHP ^7.4
-* Node >=12.22
-* Yarn >=1.0
+* `php ^7.4`
+* `node >=16`
+* `yarn >=1`

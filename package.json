@@ -12,15 +12,18 @@
 		"cms",
 		"theme"
 	],
+	"browserslist": ">1% in ch",
+	"engines": {
+		"node": ">=16"
+	},
 	"devDependencies": {
-		"del": "^6.0.0",
-		"esbuild": "^0.14.9",
+		"esbuild": "^0.14.10",
 		"esbuild-postcss": "^0.0.4",
-		"eslint": "^8.5.0",
+		"eslint": "^8.6.0",
 		"eslint-config-sweet": "^7.0.0",
 		"open": "^8.4.0",
 		"postcss": "^8.4.5",
-		"postcss-preset-env": "^7.1.0",
+		"postcss-preset-env": "^7.2.0",
 		"stylelint": "^14.2.0",
 		"stylelint-config-rational-order": "^0.1.2",
 		"stylelint-config-standard": "^24.0.0",
@@ -28,8 +31,8 @@
 	},
 	"scripts": {
 		"start": "yarn dev",
-		"dev": "node build",
-		"prod": "node build --prod",
-		"dist": "node build --dist"
+		"dev": "node build.mjs",
+		"prod": "node build.mjs --prod",
+		"dist": "node build.mjs --dist"
 	}
 }
