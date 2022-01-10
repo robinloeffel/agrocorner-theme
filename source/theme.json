@@ -2,7 +2,7 @@
 	"name": "AgroCorner",
 	"description": "Das Template für die neue Website der AgroCorner AG.",
 	"author": "Robin Löffel",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"license": "MIT",
   "tooltips": {
     "+content": "Hauptinhalt (Text, Bilder, Listen, etc.) der Seite.",

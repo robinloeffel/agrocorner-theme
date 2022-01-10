@@ -37,3 +37,8 @@
 .am-slider .am-slider-next {
   color: inherit;
 }
+
+/* fix overlapping buttons on mobile */
+.am-button {
+  margin-block: 0.1em;
+}
