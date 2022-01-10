@@ -1,7 +1,6 @@
 import { exec } from 'child_process';
 import { build } from 'esbuild';
 import postcss from 'esbuild-postcss';
-import open from 'open';
 
 const production = process.argv.includes('--prod');
 const dist = process.argv.includes('--dist');
@@ -24,8 +23,8 @@ exec('rm -rf ./dist', async () => {
   });
 
   if (dist) {
-    open('./dist');
+    exec('open ./dist');
   } else {
-    exec('php -S 0.0.0.0:9000 -t ../..', open('http://localhost:9000'));
+    exec('php -S 0.0.0.0:9000 -t ../..', exec('open http://localhost:9000'));
   }
 });
