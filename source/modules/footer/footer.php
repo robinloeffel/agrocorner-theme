@@ -39,12 +39,14 @@
   </div>
   <div class="footer-column">
     <span class="footer-column-heading">@{ where | def('So finden Sie uns') }</span>
-    <iframe
-      src="https://www.google.ch/maps/embed?pb=!1m14!1m8!1m3!1d21768.213447271377!2d7.1588054074706875!3d47.000449072392065!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x980966be92540831!2sAgrocorner%20AG!5e0!3m2!1sen!2sch!4v1624976527488!5m2!1sen!2sch"
-      loading="lazy"
-      class="footer-map"
-      title="AgroCorner auf Google Maps (Moosallmendweg 19, 3225 Müntschemier)"
-    ></iframe>
+    <a
+      href="@{ urlLocationPlan }"
+      aria-label="@{ labelUrlLocationPlan | def('Link auf Google Maps.') }"
+    >
+      <@ with @{ imageLocationPlan } @>
+        <img src="@{ :file }" alt="@{ :caption }" class="footer-map" loading="lazy">
+      <@ end @>
+    </a>
   </div>
   <div class="footer-column">
     <span class="footer-column-heading">@{ overview | def('Übersicht') }</span>
