@@ -13,7 +13,7 @@
     <p class="footer-column-paragraph">
       Telefon: <a href="tel:@{ phoneNumber }">@{ phoneNumber }</a><br>
       E-Mail: <a href="mailto:@{ emailAddress }">@{ emailAddress }</a><br>
-      <a href="@{ instagramUrl }" class="social-link">
+      <a href="@{ urlInstagram }" class="social-link">
         <img
           src="/packages/agrocorner-theme/source/img/instagram.svg"
           class="social-icon"
@@ -21,7 +21,7 @@
           alt=""
         >
         Instagram
-      </a> / <a href="@{ facebookUrl }" class="social-link">
+      </a> / <a href="@{ urlFacebook }" class="social-link">
         <img
           src="/packages/agrocorner-theme/source/img/facebook.svg"
           class="social-icon"
@@ -39,13 +39,14 @@
   </div>
   <div class="footer-column">
     <span class="footer-column-heading">@{ where | def('So finden Sie uns') }</span>
-    <a
-      href="@{ urlLocationPlan }"
-      aria-label="@{ labelUrlLocationPlan | def('Link auf Google Maps.') }"
-    >
-      <@ with @{ imageLocationPlan } @>
-        <img src="@{ :file }" alt="@{ :caption }" class="footer-map" loading="lazy">
-      <@ end @>
+    <a href="@{ urlLocationPlan }" class="footer-map-link">
+      <span class="screen-reader-only">@{ labelUrlLocationPlan | def('Hier finden Sie uns auf Google Maps.') }</span>
+      <img
+        src="@{ imageLocationPlan }"
+        class="footer-map"
+        loading="lazy"
+        alt=""
+      >
     </a>
   </div>
   <div class="footer-column">

@@ -8,6 +8,10 @@
   border-top: 3px solid var(--red);
 }
 
+.footer a {
+  color: var(--red);
+}
+
 .footer-column-heading {
   display: block;
   margin-bottom: 1em;
@@ -33,6 +37,10 @@
   aspect-ratio: 4 / 3;
 }
 
+.footer-map-link {
+  display: inline-flex;
+}
+
 .footer-decoration {
   position: absolute;
   right: 50px;
@@ -40,10 +48,6 @@
   padding: 10px;
   background-color: var(--dark-grey);
   transform: translateY(-50%);
-}
-
-.footer a {
-  color: var(--red);
 }
 
 .footer .social-link {
