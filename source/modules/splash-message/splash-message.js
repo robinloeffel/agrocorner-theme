@@ -7,22 +7,19 @@ if (message) {
     message.remove();
   } else {
     // if there is and the user hasn't clicked it away, initialize the module
-    const closeButton = document.querySelector('.splash-message-close');
+    const closeButton = message.querySelector('.splash-message-close');
 
     const close = () => {
+      message.addEventListener('transitionend', message.remove);
+
       window.sessionStorage.setItem('hideSplashMessage', true);
-
-      message.addEventListener('transitionend', () => {
-        message.remove();
-      });
-
       window.requestAnimationFrame(() => {
         message.classList.remove('splash-message-visible');
       });
     };
 
-    const closeViaKeyboard = event => {
-      if (event.key === 'Escape') {
+    const closeViaKeyboard = ({ key }) => {
+      if (key === 'Escape') {
         window.removeEventListener('keydown', closeViaKeyboard);
         close();
       }
