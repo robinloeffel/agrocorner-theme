@@ -2,7 +2,7 @@
 	"name": "AgroCorner",
 	"description": "Das Template für die neue Website der AgroCorner AG.",
 	"author": "Robin Löffel",
-	"version": "1.1.0",
+	"version": "1.1.1",
 	"license": "MIT",
   "tooltips": {
     "+content": "Hauptinhalt (Text, Bilder, Listen, etc.) der Seite.",
@@ -26,6 +26,7 @@
     "overview": "Überschrift in der Fusszeile für den Abschnitt «Übersicht».",
     "pageLang": "Die Sprache, auf welcher die Webseite geschrieben ist. Der Standardwert ist «de».",
     "phoneNumber": "Telefonnummer der AgroCorner AG.",
+    "splashMessageClose": "Text, der den Schliessen-Knopf der Splash Message beschreibt. Der Standardwert ist «Fenster schliessen».",
     "tagline": "Lauftext für die Tagline.",
     "textContactAddress": "Text für die Adresse, die in der Fusszeile steht.",
     "textHoursRegular": "Text für die Öffnungszeiten, die in der Fusszeile stehen.",
