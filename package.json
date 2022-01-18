@@ -19,10 +19,10 @@
 	"devDependencies": {
 		"esbuild": "^0.14.11",
 		"esbuild-postcss": "^0.0.4",
-		"eslint": "^8.6.0",
+		"eslint": "^8.7.0",
 		"eslint-config-sweet": "^8.0.1",
 		"postcss": "^8.4.5",
-		"postcss-preset-env": "^7.2.0",
+		"postcss-preset-env": "^7.2.3",
 		"stylelint": "^14.2.0",
 		"stylelint-config-rational-order": "^0.1.2",
 		"stylelint-config-standard": "^24.0.0",
