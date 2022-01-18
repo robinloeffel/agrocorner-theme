@@ -2,8 +2,7 @@
   position: fixed;
   z-index: 9;
   display: grid;
-  align-content: center;
-  justify-content: center;
+  place-content: center;
   background-color: var(--dark-grey-translucent);
   transform: translateY(5%);
   opacity: 0;
@@ -46,7 +45,6 @@
   padding: 50px;
   overflow-y: auto;
   color: var(--dark-grey);
-  font-weight: 500;
   background-color: var(--light-grey);
 }
 

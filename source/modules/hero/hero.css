@@ -4,6 +4,7 @@
   grid-template-columns: 1fr 1fr;
   height: 70vh;
   padding: 60px;
+  font-weight: bold;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -22,14 +23,12 @@
 .hero-tagline {
   display: block;
   margin-bottom: 0.5em;
-  font-weight: bold;
   font-size: var(--font-size-bigger);
   line-height: var(--line-height);
 }
 
 .hero-cta {
   color: var(--red);
-  font-weight: bold;
   font-size: var(--font-size-big);
 }
 

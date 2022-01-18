@@ -1,14 +1,10 @@
-:root {
-  --mobile-navigation-item-height: 70px;
-}
-
 .navigation {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: 9;
-  padding: 0 60px;
+  padding-inline: 60px;
   font-weight: bold;
   background-color: var(--dark-grey);
   box-shadow: 0 2px 4px var(--shadow-color);

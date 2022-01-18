@@ -4,7 +4,6 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 40px;
   padding: 60px;
-  font-weight: 500;
   border-top: 3px solid var(--red);
 }
 
