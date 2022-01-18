@@ -1,7 +1,9 @@
 .user-editable h1,
 .user-editable h2,
 .user-editable h3,
-.user-editable h4 {
+.user-editable h4,
+.user-editable h5,
+.user-editable h6 {
   hyphens: auto;
 }
 
