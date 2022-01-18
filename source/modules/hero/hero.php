@@ -6,7 +6,7 @@
     <@ if !@{ tagline } @>hero-no-text<@ end @>
   "
   style="
-    background-image: url(@{ imageHero } | def(''));
+    background-image: url(@{ imageHero | def('') });
     background-position: @{ heroFocusPoint | def('center') };
   "
 >
