@@ -14,7 +14,7 @@
 	<meta name="robots" content="index, follow">
   <link rel="canonical" href="https://agrocorner.ch@{ url }">
 	<link rel="shortcut icon" type="image/png" href="@{ imageFavicon }">
-  <link rel="stylesheet" type="text/css" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" type="text/css" href="https://rsms.me/inter/inter.css" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="/packages/agrocorner-theme/dist/agrocorner.css">
 	<script type="text/javascript" src="/packages/agrocorner-theme/dist/agrocorner.js" defer></script>
   <script type="text/javascript">
