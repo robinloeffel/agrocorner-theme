@@ -21,15 +21,13 @@
 }
 
 .hero-tagline {
-  display: block;
   margin-bottom: 0.5em;
-  font-size: var(--font-size-bigger);
   line-height: var(--line-height);
 }
 
 .hero-cta {
   color: var(--red);
-  font-size: var(--font-size-big);
+  font-size: var(--font-size-h2);
 }
 
 @media screen and (max-width: 1000px) {

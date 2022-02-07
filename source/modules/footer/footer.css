@@ -15,7 +15,7 @@
   display: block;
   margin-bottom: 1em;
   font-weight: bold;
-  font-size: var(--font-size-big);
+  font-size: var(--font-size-h2);
 }
 
 .footer-column-paragraph-conserve-breaks {
