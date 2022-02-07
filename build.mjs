@@ -1,6 +1,7 @@
 import { exec } from 'child_process';
 import { build } from 'esbuild';
 import postcss from 'esbuild-postcss';
+import eslint from 'esbuild-plugin-eslint';
 
 const production = process.argv.includes('--prod');
 const dist = process.argv.includes('--dist');
@@ -18,6 +19,7 @@ exec('rm -rf ./dist', async () => {
     minify: production || dist,
     watch: !dist,
     plugins: [
+      eslint(),
       postcss()
     ]
   });
