@@ -15,7 +15,9 @@
       <div class="hero-text">
         <h1 class="hero-tagline">@{ tagline }</h1>
         <@ if @{ labelCtaButton } @>
-          <a href="@{ urlCtaButton }" class="hero-cta">@{ labelCtaButton }</a>
+          <h2 class="hero-cta">
+            <a href="@{ urlCtaButton }" >@{ labelCtaButton }</a>
+          </h2>
         <@ end @>
       </div>
     <@ end @>

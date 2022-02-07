@@ -14,7 +14,6 @@
   z-index: 1;
   grid-column: 2;
   align-self: center;
-  margin: 0;
   padding: 50px;
   color: var(--dark-grey);
   background-color: var(--light-grey-translucent);
@@ -23,11 +22,6 @@
 .hero-tagline {
   margin-bottom: 0.5em;
   line-height: var(--line-height);
-}
-
-.hero-cta {
-  color: var(--red);
-  font-size: var(--font-size-h2);
 }
 
 @media screen and (max-width: 1000px) {

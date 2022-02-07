@@ -10,8 +10,6 @@
   /* typography */
   --font-family: intervariable, system-ui, sans-serif;
   --font-size: 18px;
-  --font-size-small: 16px;
-  --font-size-smaller: 14px;
   --font-size-h2: 1.5em;
   --font-size-h1: 2em;
   --line-height: 1.6;
@@ -44,7 +42,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--red);
 }
 
 h1,

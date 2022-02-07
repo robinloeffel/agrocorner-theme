@@ -1,8 +1,6 @@
 .navigation {
   position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
+  inset: 0 0 auto 0;
   z-index: 9;
   padding-inline: 60px;
   font-weight: bold;
@@ -21,7 +19,7 @@
   display: flex;
   max-width: 1440px;
   height: 100px;
-  margin: auto;
+  margin-inline: auto;
 }
 
 .navigation-item {
@@ -43,9 +41,7 @@
 
 .navigation-link::after {
   position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  inset: auto 0 0 0;
   height: 3px;
   background-color: var(--red);
   transform: scaleY(0);
