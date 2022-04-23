@@ -45,7 +45,7 @@
   right: 50px;
   max-height: 50px;
   padding: 10px;
-  background-color: var(--dark-grey);
+  background-color: var(--grey);
   transform: translateY(-50%);
 }
 

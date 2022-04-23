@@ -1,6 +1,6 @@
 {
 	"name": "@rbnlffl/agrocorner-theme",
-	"version": "1.2.1",
+	"version": "1.2.2",
 	"description": "A custom theme for Automad",
 	"repository": "https://github.com/robinloeffel/agrocorner-theme.git",
 	"homepage": "https://github.com/robinloeffel/agrocorner-theme",
@@ -17,16 +17,16 @@
 		"node": ">=16"
 	},
 	"devDependencies": {
-		"esbuild": "^0.14.19",
+		"esbuild": "^0.14.38",
 		"esbuild-plugin-eslint": "^0.0.1",
 		"esbuild-postcss": "^0.0.4",
-		"eslint": "^8.8.0",
+		"eslint": "^8.14.0",
 		"eslint-config-sweet": "^8.0.1",
-		"postcss": "^8.4.6",
-		"postcss-preset-env": "^7.3.1",
-		"stylelint": "^14.3.0",
+		"postcss": "^8.4.12",
+		"postcss-preset-env": "^7.4.3",
+		"stylelint": "^14.7.1",
 		"stylelint-config-rational-order": "^0.1.2",
-		"stylelint-config-standard": "^24.0.0",
+		"stylelint-config-standard": "^25.0.0",
 		"stylelint-order": "^5.0.0"
 	},
 	"scripts": {

@@ -3,7 +3,7 @@
   z-index: 9;
   display: grid;
   place-content: center;
-  background-color: var(--dark-grey-translucent);
+  background-color: var(--grey-translucent);
   transform: translateY(5%);
   opacity: 0;
   transition:
@@ -44,8 +44,8 @@
   max-height: 90vh;
   padding: 50px;
   overflow-y: auto;
-  color: var(--dark-grey);
-  background-color: var(--light-grey);
+  color: var(--grey);
+  background-color: var(--white);
 }
 
 /* as not to collide with the close button */
@@ -56,7 +56,7 @@
 
 @supports (backdrop-filter: blur()) {
   .splash-message-content {
-    background-color: var(--light-grey-translucent);
+    background-color: var(--white-translucent);
     backdrop-filter: blur(25px);
   }
 }

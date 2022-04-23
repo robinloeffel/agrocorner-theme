@@ -15,8 +15,8 @@
   grid-column: 2;
   align-self: center;
   padding: 50px;
-  color: var(--dark-grey);
-  background-color: var(--light-grey-translucent);
+  color: var(--grey);
+  background-color: var(--white-translucent);
 }
 
 .hero-tagline {

@@ -2,16 +2,16 @@
 :root {
   --am-block-margin-top: 1em;
   --am-block-max-width: none;
-  --am-button-background: var(--light-grey);
-  --am-button-border-color: var(--light-grey);
+  --am-button-background: var(--white);
+  --am-button-border-color: var(--white);
   --am-button-border-radius: 5px;
   --am-button-color: var(--red);
   --am-button-hover-background: transparent;
-  --am-button-hover-border-color: var(--light-grey);
-  --am-button-hover-color: var(--light-grey);
+  --am-button-hover-border-color: var(--white);
+  --am-button-hover-color: var(--white);
   --am-button-margin: 0;
-  --am-input-border: 2px solid var(--light-grey-translucent);
-  --am-input-focus-border: 2px solid var(--light-grey);
+  --am-input-border: 2px solid var(--white-translucent);
+  --am-input-focus-border: 2px solid var(--white);
 }
 
 /* overrides for non-configurable elements provided by automad */
@@ -41,4 +41,14 @@
 /* fix overlapping buttons on mobile */
 .am-button {
   margin-block: 0.1em;
+}
+
+/* hide figcaption visually but keep it for seo and a11y purposes */
+.am-block figcaption {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
 }
