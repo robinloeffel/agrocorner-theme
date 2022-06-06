@@ -3,8 +3,8 @@ import { build } from 'esbuild';
 import postcss from 'esbuild-postcss';
 import eslint from 'esbuild-plugin-eslint';
 
-const production = process.argv.includes('--prod');
-const dist = process.argv.includes('--dist');
+const minify = process.argv.includes('--minify');
+const watch = process.argv.includes('--watch');
 
 exec('rm -rf dist', async () => {
   await build({
@@ -15,18 +15,18 @@ exec('rm -rf dist', async () => {
     outdir: 'dist',
     bundle: true,
     incremental: true,
-    sourcemap: !production && !dist,
-    minify: production || dist,
-    watch: !dist,
+    sourcemap: watch,
     plugins: [
       eslint(),
       postcss()
-    ]
+    ],
+    minify,
+    watch
   });
 
-  if (dist) {
-    exec('open dist');
-  } else {
+  if (watch) {
     exec('php -S 0.0.0.0:9000 -t ../..', exec('open http://localhost:9000'));
+  } else {
+    exec('open dist');
   }
 });
