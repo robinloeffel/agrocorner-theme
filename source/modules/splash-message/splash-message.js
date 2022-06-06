@@ -13,9 +13,7 @@ if (message) {
       message.addEventListener('transitionend', message.remove);
 
       window.sessionStorage.setItem('hideSplashMessage', true);
-      window.requestAnimationFrame(() => {
-        message.classList.remove('splash-message-visible');
-      });
+      window.requestAnimationFrame(message.classList.remove('splash-message-visible'));
     };
 
     const closeViaKeyboard = ({ key }) => {
@@ -26,9 +24,7 @@ if (message) {
     };
 
     const show = () => {
-      window.requestAnimationFrame(() => {
-        message.classList.add('splash-message-visible');
-      });
+      window.requestAnimationFrame(message.classList.add('splash-message-visible'));
     };
 
     closeButton.addEventListener('click', close);

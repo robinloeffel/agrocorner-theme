@@ -1,18 +1,29 @@
-const navigation = document.querySelector('nav');
+const navigation = document.querySelector('.navigation');
 const toggle = navigation.querySelector('[data-navigation-toggle]');
-const { childElementCount: items } = navigation.firstElementChild;
 
-const style = document.createElement('style');
-style.textContent = `:root{--mobile-navigation-items:${items};}`;
-document.body.append(style);
+toggle.addEventListener('click', () => {
+  window.requestAnimationFrame(navigation.classList.toggle(
+    'navigation-expanded',
+    !navigation.classList.contains('navigation-expanded')
+  ));
+});
 
-const handleClick = () => {
-  window.requestAnimationFrame(() => {
-    navigation.classList.toggle(
-      'navigation-expanded',
-      !navigation.classList.contains('navigation-expanded')
+const setMobileStyles = () => {
+  if (window.matchMedia('(max-width: 1000px)').matches) {
+    navigation.style.setProperty(
+      '--mobile-navigation-links',
+      navigation.firstElementChild.childElementCount - 2
     );
-  });
+
+    navigation.style.setProperty(
+      '--mobile-navigation-link-height',
+      `${navigation.firstElementChild.lastElementChild.clientHeight }px`
+    );
+  } else {
+    navigation.style.removeProperty('--mobile-navigation-links');
+    navigation.style.removeProperty('--mobile-navigation-link-height');
+  }
 };
 
-toggle.addEventListener('click', handleClick);
+window.addEventListener('resize', setMobileStyles);
+setMobileStyles();

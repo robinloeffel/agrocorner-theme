@@ -14,7 +14,7 @@
   z-index: 1;
   grid-column: 2;
   align-self: center;
-  padding: 50px;
+  padding: 35px 40px;
   color: var(--grey);
   background-color: var(--white-translucent);
 }
