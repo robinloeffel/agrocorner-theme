@@ -2,10 +2,12 @@ const navigation = document.querySelector('.navigation');
 const toggle = navigation.querySelector('[data-navigation-toggle]');
 
 toggle.addEventListener('click', () => {
-  window.requestAnimationFrame(navigation.classList.toggle(
-    'navigation-expanded',
-    !navigation.classList.contains('navigation-expanded')
-  ));
+  window.requestAnimationFrame(() => {
+    navigation.classList.toggle(
+      'navigation-expanded',
+      !navigation.classList.contains('navigation-expanded')
+    );
+  });
 });
 
 const setMobileStyles = () => {

@@ -20,8 +20,11 @@
 }
 
 .hero-tagline {
-  margin-bottom: 0.5em;
   line-height: var(--line-height);
+}
+
+.hero-cta {
+  margin-top: 0.5em;
 }
 
 @media screen and (max-width: 1000px) {
