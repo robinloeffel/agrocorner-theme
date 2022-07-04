@@ -2,14 +2,8 @@
 
 <@ with @{ imageHero } @>
   <header
-    class="
-      hero
-      <@ if !@{ tagline } @>hero-no-text<@ end @>
-    "
-    style="
-      background-image: url(@{ imageHero });
-      background-position: @{ heroFocusPoint | def('center') };
-    "
+    class="hero<@ if !@{ tagline } @> hero-no-text<@ end @>"
+    style="background-position: @{ heroFocusPoint | def('center') }; background-image: url(@{ :file })"
   >
     <@ if @{ tagline } @>
       <div class="hero-text">
