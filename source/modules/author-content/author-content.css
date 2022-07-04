@@ -14,7 +14,7 @@
   }
 
   .user-editable {
-    grid-column: initial;
+    grid-column: 1;
   }
 }
 

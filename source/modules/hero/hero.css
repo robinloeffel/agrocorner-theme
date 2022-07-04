@@ -1,39 +1,36 @@
 .hero {
-  position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
   height: 70vh;
   padding: 60px;
-  font-weight: bold;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
 
 .hero-text {
-  z-index: 1;
   grid-column: 2;
-  align-self: center;
   padding: 35px 40px;
   color: var(--grey);
+  font-weight: bold;
   background-color: var(--white-translucent);
+}
+
+.hero-text > * + * {
+  margin-top: 0.5em;
 }
 
 .hero-tagline {
   line-height: var(--line-height);
 }
 
-.hero-cta {
-  margin-top: 0.5em;
-}
-
 @media screen and (max-width: 1000px) {
   .hero {
     grid-template-columns: 1fr;
-    height: auto;
+    height: initial;
     padding: 40px;
-    background: none !important;
-    aspect-ratio: auto;
+    background: initial !important;
   }
 
   .hero-no-text {
