@@ -1,5 +1,4 @@
-const hero = document.querySelector('.hero');
-const heroText = hero.querySelector('.hero-text');
+const heroText = document.querySelector('.hero-text');
 
 if (heroText) {
   window.addEventListener('load', () => {
