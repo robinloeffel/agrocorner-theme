@@ -14,7 +14,7 @@
       >
         <a class="page-link" href="@{ url }">
           <h2 class="page-title">@{ title }</h2>
-          <img src="@{ imagePageTile }" alt="" class="page-tile-image" loading="lazy">
+          <img data-src="@{ imagePageTile }" alt="" class="page-tile-image">
         </a>
       </li>
     <@ end @>
