@@ -1,6 +1,7 @@
 const lazyLoadHandleLoad = ({ target }) => {
   target.classList.add('page-tile-image-visible');
 };
+
 const lazyLoadHandleIntersect = (entries, observer) => {
   entries.forEach(({ target, isIntersecting }) => {
     if (isIntersecting) {

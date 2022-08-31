@@ -38,9 +38,36 @@
   color: inherit;
 }
 
-/* fix overlapping buttons on mobile */
+/* fix overlapping buttons on mobile and add animations */
 .am-button {
+  position: relative;
+  display: inline-flex;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.25s;
+  transition-property: padding, background-color, color, border-color;
   margin-block: 0.1em;
+  padding-inline: 1.5em;
+}
+
+.am-button::after {
+  position: absolute;
+  right: 1.5em;
+  z-index: -1;
+  align-self: center;
+  color: white;
+  transition: transform 0.25s ease-in-out;
+  content: " ->";
+}
+
+.am-button:hover,
+.am-button:focus {
+  padding-right: 2em;
+  padding-left: 1em;
+}
+
+.am-button:hover::after,
+.am-button:focus::after {
+  transform: translateX(0.75em);
 }
 
 /* hide figcaption visually but keep it for seo and a11y purposes */
