@@ -42,21 +42,21 @@
 .am-button {
   position: relative;
   display: inline-flex;
-  transition-timing-function: ease-in-out;
-  transition-duration: 0.25s;
-  transition-property: padding, background-color, color, border-color;
   margin-block: 0.1em;
   padding-inline: 1.5em;
+  transition-duration: 0.25s;
+  transition-property: padding, background-color, color, border-color;
+  transition-timing-function: ease-in-out;
 }
 
 .am-button::after {
   position: absolute;
-  right: 1.5em;
   z-index: -1;
+  right: 1.5em;
   align-self: center;
   color: white;
-  transition: transform 0.25s ease-in-out;
   content: " ->";
+  transition: transform 0.25s ease-in-out;
 }
 
 .am-button:hover,
@@ -73,9 +73,9 @@
 /* hide figcaption visually but keep it for seo and a11y purposes */
 .am-block figcaption {
   position: absolute;
+  overflow: hidden;
   width: 1px;
   height: 1px;
-  margin: -1px;
   padding: 0;
-  overflow: hidden;
+  margin: -1px;
 }

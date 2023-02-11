@@ -6,16 +6,14 @@ if (message) {
     // if there is, but the user has already closed it during this session, remove it
     message.remove();
   } else {
-    // if there is and the user hasn't clicked it away, initialize the module
+    // if there is, and the user hasn't clicked it away, initialize the module
     const closeButton = message.querySelector('.splash-message-close');
 
     const close = () => {
       message.addEventListener('transitionend', message.remove);
 
       window.sessionStorage.setItem('hideSplashMessage', true);
-      window.requestAnimationFrame(() => {
-        message.classList.remove('splash-message-visible');
-      });
+      message.classList.remove('splash-message-visible');
     };
 
     const closeViaKeyboard = ({ key }) => {
@@ -26,9 +24,7 @@ if (message) {
     };
 
     const show = () => {
-      window.requestAnimationFrame(() => {
-        message.classList.add('splash-message-visible');
-      });
+      message.classList.add('splash-message-visible');
     };
 
     closeButton.addEventListener('click', close);

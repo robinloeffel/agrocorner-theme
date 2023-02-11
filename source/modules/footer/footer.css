@@ -1,10 +1,10 @@
 .footer {
   position: relative;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
   padding: 60px;
   border-top: 3px solid var(--red);
+  gap: 40px;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .footer a {
@@ -14,8 +14,8 @@
 .footer-column-heading {
   display: block;
   margin-bottom: 1em;
-  font-weight: bold;
   font-size: var(--font-size-h2);
+  font-weight: bold;
 }
 
 .footer-column-paragraph-conserve-breaks {
@@ -32,8 +32,8 @@
 
 .footer-map {
   width: 100%;
-  object-fit: cover;
   aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
 
 .footer-map-link {
@@ -67,8 +67,8 @@
 
 @media screen and (max-width: 700px) {
   .footer {
-    grid-template-columns: 1fr;
-    margin-top: 40px;
     padding: 40px;
+    margin-top: 40px;
+    grid-template-columns: 1fr;
   }
 }
