@@ -1,18 +1,11 @@
 {
 	"name": "@rbnlffl/agrocorner-theme",
 	"type": "module",
-	"version": "1.2.2",
-	"description": "A custom theme for Automad",
 	"repository": "https://github.com/robinloeffel/agrocorner-theme.git",
 	"homepage": "https://github.com/robinloeffel/agrocorner-theme",
 	"bugs": "https://github.com/robinloeffel/agrocorner-theme/issues",
 	"author": "Robin Löffel (https://robinloeffel.ch) <hi@robinloeffel.ch>",
 	"license": "MIT",
-	"keywords": [
-		"automad",
-		"cms",
-		"theme"
-	],
 	"browserslist": ">1% in ch",
 	"devDependencies": {
 		"@rbnlffl/esbuild-plugin-browser-sync": "^0.0.1",
@@ -31,7 +24,7 @@
 		"typescript": "^5.0.4"
 	},
 	"scripts": {
-		"start": "node build.config.js --watch",
-		"build": "node build.config.js"
+		"start": "node esbuild.config.js --watch",
+		"build": "node esbuild.config.js"
 	}
 }

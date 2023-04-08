@@ -2,9 +2,9 @@ import { exec } from "node:child_process";
 import esbuild from "esbuild";
 import { sassPlugin as sass } from "esbuild-sass-plugin";
 import eslint from "esbuild-plugin-eslint";
+import browserSync from "@rbnlffl/esbuild-plugin-browser-sync";
 import postcss from "postcss";
 import postcssrc from "postcss-load-config";
-import browserSync from "@rbnlffl/esbuild-plugin-browser-sync";
 
 const watch = process.argv.includes("--watch");
 

@@ -1,13 +1,7 @@
-[![agrocorner.ch](source/theme.jpg)](https://agrocorner.ch)
+[![agrocorner.ch](source/theme.png)](https://agrocorner.ch)
 
-# `agrocorner-theme`
+# agrocorner-theme
 
-> a custom-tailored theme for [agrocorner](https://agrocorner.ch), built on [automad](https://automad.org). 🖌
+>  a custom [`automad`](https://github.com/marcantondahmen/automad) theme for [agrocorner](https://agrocorner.ch) 🌾
 
-toolchain consisting of `eslint`, `esbuild`, `postcss`; written in php, vanilla css and vanilla js.
-
-## local requirements
-
-* `php ^7.4`
-* `node >=16`
-* `yarn >=1`
+written in [`typescript`](https://github.com/microsoft/TypeScript) and [`sass`](https://github.com/sass/sass), bundled with [`esbuild`](https://github.com/evanw/esbuild)
