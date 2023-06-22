@@ -17,6 +17,7 @@ const config = {
   outdir: "dist",
   bundle: true,
   sourcemap: watch,
+  target: "es2022",
   minify: !watch,
   plugins: [
     eslint(),
