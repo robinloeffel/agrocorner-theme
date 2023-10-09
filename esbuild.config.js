@@ -4,7 +4,7 @@ import { sassPlugin as sass } from "esbuild-sass-plugin";
 import eslint from "esbuild-plugin-eslint";
 import browserSync from "@rbnlffl/esbuild-plugin-browser-sync";
 import postcss from "postcss";
-import postcssrc from "postcss-load-config";
+import postcssPresetEnv from "postcss-preset-env";
 
 const watch = process.argv.includes("--watch");
 
@@ -17,15 +17,13 @@ const config = {
   outdir: "dist",
   bundle: true,
   sourcemap: watch,
-  target: "es2022",
   minify: !watch,
   plugins: [
     eslint(),
     sass({
       transform: async (source, directory) => {
-        const postcssConfig = await postcssrc();
-        const postcssProcessor = postcss(postcssConfig.plugins);
-        const { css } = await postcssProcessor.process(source, {
+        const processor = postcss([ postcssPresetEnv() ]);
+        const { css } = await processor.process(source, {
           from: directory
         });
         return css;

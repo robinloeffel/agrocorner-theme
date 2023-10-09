@@ -1,10 +1,13 @@
 {
-  "include": [ "source" ],
-  "exclude": [ "node_modules" ],
   "compilerOptions": {
-    "module": "es2022",
-    "lib": [ "es2022", "dom", "dom.iterable" ],
     "strict": true,
-    "outDir": "dist"
-  }
+    "target": "esnext",
+    "module": "esnext",
+    "lib": ["esnext", "dom", "dom.iterable"],
+    "moduleResolution": "bundler",
+    "forceConsistentCasingInFileNames": true,
+    "verbatimModuleSyntax": true,
+    "isolatedModules": true
+  },
+  "include": ["source"]
 }
