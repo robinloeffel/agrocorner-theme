@@ -1,15 +1,16 @@
 const lazyLoadHandleLoad = ({ target }: Event) => {
-  (target as HTMLElement).classList.add("page-tile-image-visible");
+  (target as HTMLElement | null)?.classList.add("page-tile-image-visible");
 };
 
 const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
   for (const { target, isIntersecting } of entries) {
     if (isIntersecting) {
-      observer.unobserve(target);
+      const image = target as HTMLImageElement;
 
-      target.addEventListener("load", lazyLoadHandleLoad);
-      target.src = target.dataset.src;
-      delete target.dataset.src;
+      observer.unobserve(image);
+      image.addEventListener("load", lazyLoadHandleLoad);
+      image.src = image.dataset.src ?? "";
+      delete image.dataset.src;
     }
   }
 }, { threshold: 0.5 });
@@ -17,10 +18,11 @@ const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
 const fakeLazyLoadObserver = new IntersectionObserver((entries, observer) => {
   for (const { target, isIntersecting } of entries) {
     if (isIntersecting) {
-      observer.unobserve(target);
+      const image = target as HTMLImageElement;
 
-      target.style.removeProperty("opacity");
-      target.style.removeProperty("transform");
+      observer.unobserve(image);
+      image.style.removeProperty("opacity");
+      image.style.removeProperty("transform");
     }
   }
 }, { threshold: 0.5 });

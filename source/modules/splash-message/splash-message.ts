@@ -1,10 +1,11 @@
 const message = document.querySelector<HTMLDivElement>(".splash-message");
+const hide = window.sessionStorage.getItem("hideSplashMessage") === "true";
 
 if (message) {
-  if (window.sessionStorage.getItem("hideSplashMessage") === "true") {
+  if (hide) {
     message.remove();
   } else {
-    const closeButton = message.querySelector<HTMLButtonElement>(".splash-message-close")!;
+    const closeButton = message.querySelector<HTMLButtonElement>(".splash-message-close");
 
     const close = () => {
       message.addEventListener("transitionend", () => {
@@ -17,7 +18,6 @@ if (message) {
 
     const closeViaKeyboard = ({ key }: KeyboardEvent) => {
       if (key === "Escape") {
-        window.removeEventListener("keydown", closeViaKeyboard);
         close();
       }
     };
@@ -26,8 +26,8 @@ if (message) {
       message.classList.add("splash-message-visible");
     };
 
-    closeButton.addEventListener("click", close);
-    window.addEventListener("keydown", closeViaKeyboard);
-    window.addEventListener("load", show);
+    closeButton?.addEventListener("click", close, { once: true });
+    window.addEventListener("keydown", closeViaKeyboard, { once: true });
+    window.addEventListener("load", show, { once: true });
   }
 }

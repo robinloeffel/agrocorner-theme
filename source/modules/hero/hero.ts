@@ -1,7 +1,5 @@
-const heroText = document.querySelector<HTMLDivElement>(".hero-text")!;
+const heroText = document.querySelector<HTMLDivElement>(".hero-text");
 
-if (heroText) {
-  window.addEventListener("load", () => {
-    heroText.classList.add("hero-text-visible");
-  });
-}
+window.addEventListener("load", () => {
+  heroText?.classList.add("hero-text-visible");
+}, { once: true });
