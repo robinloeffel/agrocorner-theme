@@ -34,7 +34,15 @@ const config = {
       notify: false,
       ui: false
     })
-  ].filter(Boolean)
+  ].filter(Boolean),
+  banner: {
+    js: `/* ${Date.now()} */`,
+    css: `/* ${Date.now()} */`
+  },
+  loader: {
+    ".woff2": "copy"
+  },
+  assetNames: "inter"
 };
 
 exec("rm -rf dist", async () => {

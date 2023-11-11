@@ -25,6 +25,10 @@
 		"start": "node esbuild.config.js --watch",
 		"build": "node esbuild.config.js",
 		"update": "npm-check-updates --interactive --install always",
-    "postinstall": "npx update-browserslist-db@latest"
+		"font": "cp node_modules/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2 font/inter.woff2",
+		"postinstall": "npx update-browserslist-db@latest && npm run font"
+	},
+	"dependencies": {
+		"@fontsource-variable/inter": "^5.0.15"
 	}
 }

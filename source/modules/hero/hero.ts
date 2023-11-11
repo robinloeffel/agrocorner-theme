@@ -1,4 +1,4 @@
-const heroText = document.querySelector(".hero-text") as HTMLDivElement;
+const heroText = document.querySelector<HTMLDivElement>(".hero-text")!;
 
 if (heroText) {
   window.addEventListener("load", () => {

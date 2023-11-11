@@ -1,5 +1,5 @@
-const navigation = document.querySelector(".navigation") as HTMLElement;
-const toggle = navigation.querySelector("[data-navigation-toggle]") as HTMLButtonElement;
+const navigation = document.querySelector<HTMLElement>(".navigation")!;
+const toggle = navigation.querySelector<HTMLButtonElement>("[data-navigation-toggle]")!;
 
 toggle.addEventListener("click", () => {
   navigation.classList.add("navigation-animating");

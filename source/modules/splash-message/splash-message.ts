@@ -1,16 +1,15 @@
-const message = document.querySelector(".splash-message") as HTMLDivElement;
+const message = document.querySelector<HTMLDivElement>(".splash-message");
 
-// check if there's a splash message on the dom
 if (message) {
-  if (window.sessionStorage.getItem("hideSplashMessage")) {
-    // if there is, but the user has already closed it during this session, remove it
+  if (window.sessionStorage.getItem("hideSplashMessage") === "true") {
     message.remove();
   } else {
-    // if there is, and the user hasn't clicked it away, initialize the module
-    const closeButton = message.querySelector(".splash-message-close") as HTMLButtonElement;
+    const closeButton = message.querySelector<HTMLButtonElement>(".splash-message-close")!;
 
     const close = () => {
-      message.addEventListener("transitionend", message.remove);
+      message.addEventListener("transitionend", () => {
+        message.remove();
+      });
 
       window.sessionStorage.setItem("hideSplashMessage", "true");
       message.classList.remove("splash-message-visible");

@@ -1,5 +1,5 @@
 const lazyLoadHandleLoad = ({ target }: Event) => {
-  target.classList.add("page-tile-image-visible");
+  (target as HTMLElement).classList.add("page-tile-image-visible");
 };
 
 const lazyLoadObserver = new IntersectionObserver((entries, observer) => {
