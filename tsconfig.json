@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "es2022",
-    "module": "es2022",
+    "target": "esnext",
+    "module": "esnext",
     "moduleResolution": "bundler",
-    "lib": ["es2022", "dom", "dom.iterable"],
+    "lib": ["esnext", "dom", "dom.iterable"],
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "skipLibCheck": true,
