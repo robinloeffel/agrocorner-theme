@@ -1,8 +1,8 @@
 .page-tiles {
   display: grid;
-  padding: 60px;
-  gap: 40px;
   grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  padding: 60px;
 }
 
 .page-tile {
@@ -27,10 +27,10 @@
 .page-link {
   position: absolute;
   display: grid;
+  place-items: center;
   width: 100%;
   height: 100%;
   color: var(--white);
-  place-items: center;
   text-decoration: none;
 }
 
@@ -44,17 +44,17 @@
 
 .page-tile-image {
   position: absolute;
-  z-index: -1;
   top: 0;
   left: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
-  object-fit: cover;
   opacity: 0;
-  transform: translateY(10px);
   transition:
     opacity 0.5s ease-in-out,
     transform 0.5s ease-in-out;
+  transform: translateY(10px);
+  object-fit: cover;
 }
 
 .page-tile-image-visible {
@@ -89,8 +89,8 @@
 
 @media (width <= 700px) {
   .page-tiles {
-    padding: 0;
     gap: 0;
+    padding: 0;
   }
 
   .page-title {

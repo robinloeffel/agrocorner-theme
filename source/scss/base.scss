@@ -30,12 +30,12 @@ html {
 
 body {
   max-width: 1440px;
+  margin-inline: auto;
   margin-top: 100px;
-  color: var(--white);
   font-family: var(--font-family);
   font-size: var(--font-size);
   line-height: var(--line-height);
-  margin-inline: auto;
+  color: var(--white);
 }
 
 a {

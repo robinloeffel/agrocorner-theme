@@ -1,10 +1,10 @@
 .footer {
   position: relative;
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
   padding: 60px;
   border-top: 3px solid var(--red);
-  gap: 40px;
-  grid-template-columns: repeat(4, 1fr);
 }
 
 .footer a {
@@ -67,8 +67,8 @@
 
 @media (width <= 700px) {
   .footer {
+    grid-template-columns: 1fr;
     padding: 40px;
     margin-top: 40px;
-    grid-template-columns: 1fr;
   }
 }

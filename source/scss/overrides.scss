@@ -42,17 +42,17 @@
 .am-button {
   position: relative;
   display: inline-flex;
-  margin-block: 0.1em;
   padding-inline: 1.5em;
+  margin-block: 0.1em;
+  transition-timing-function: ease-in-out;
   transition-duration: 0.25s;
   transition-property: padding, background-color, color, border-color;
-  transition-timing-function: ease-in-out;
 }
 
 .am-button::after {
   position: absolute;
-  z-index: -1;
   right: 1.5em;
+  z-index: -1;
   align-self: center;
   color: white;
   content: " ->";
@@ -73,9 +73,9 @@
 /* hide figcaption visually but keep it for seo and a11y purposes */
 .am-block figcaption {
   position: absolute;
-  overflow: hidden;
   width: 1px;
   height: 1px;
   padding: 0;
   margin: -1px;
+  overflow: hidden;
 }
