@@ -17,9 +17,4 @@
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/@fontsource/inter@4.5.15/variable.css" crossorigin>
 	<link rel="stylesheet" type="text/css" href="/packages/agrocorner-theme/dist/agrocorner.css">
 	<script type="text/javascript" src="/packages/agrocorner-theme/dist/agrocorner.js" defer></script>
-  <script type="text/javascript">
-    if ('documentMode' in document) {
-      window.location = '/packages/agrocorner-theme/pages/ie11.html';
-    }
-  </script>
 </head>
