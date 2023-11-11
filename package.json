@@ -1,12 +1,7 @@
 {
 	"name": "@rbnlffl/agrocorner-theme",
-	"type": "module",
-	"repository": "https://github.com/robinloeffel/agrocorner-theme.git",
-	"homepage": "https://github.com/robinloeffel/agrocorner-theme",
-	"bugs": "https://github.com/robinloeffel/agrocorner-theme/issues",
-	"author": "Robin Löffel (https://robinloeffel.ch) <hi@robinloeffel.ch>",
 	"license": "MIT",
-  "private": true,
+	"type": "module",
 	"devDependencies": {
 		"@rbnlffl/esbuild-plugin-browser-sync": "^0.0.1",
 		"@types/eslint": "^8.44.3",
