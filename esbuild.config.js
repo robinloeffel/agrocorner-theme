@@ -7,6 +7,7 @@ import postcss from "postcss";
 import postcssPresetEnv from "postcss-preset-env";
 
 const watch = process.argv.includes("--watch");
+const [ date ] = new Date().toISOString().split("T");
 
 /** @type {esbuild.BuildOptions} */
 const config = {
@@ -36,8 +37,8 @@ const config = {
     })
   ].filter(Boolean),
   banner: {
-    js: `/* ${Date.now()} */`,
-    css: `/* ${Date.now()} */`
+    js: `/* ${date} */`,
+    css: `/* ${date} */`
   },
   loader: {
     ".woff2": "copy"
