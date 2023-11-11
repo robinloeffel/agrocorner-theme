@@ -2,40 +2,41 @@
 
 <nav class="navigation">
   <ul class="navigation-list">
-    <li class="navigation-item">
+    <li class="navigation-group controls">
       <@ with '/' @>
-        <a href="@{ url }" class="navigation-link">
+        <a href="@{ url }" class="navigation-link home">
           <img
             src="/packages/agrocorner-theme/source/img/agrocorner-logo.svg"
             class="navigation-logo"
             loading="lazy"
             alt=""
           >
-          <span class="screen-reader-only">@{ title }</span>
+          <span class="sr-only">@{ title }</span>
         </a>
       <@ end @>
+      <button class="navigation-toggle-mobile" data-navigation-toggle>
+        <span class="sr-only">Navigation ein- und ausblenden</span>
+        <img src="/packages/agrocorner-theme/source/img/arrow-down.svg" alt="">
+      </button>
     </li>
-    <li class="navigation-item">
-      <button
-        class="navigation-toggle-mobile"
-        aria-label="Navigation ein- und ausblenden"
-        data-navigation-toggle
-      ></button>
+    <li class="navigation-group items">
+      <ul class="navigation-group-list">
+        <@ newPagelist {
+          type: 'children',
+          context: '/'
+        } @>
+        <@foreach in pagelist @>
+          <li class="navigation-item">
+            <a
+              href="@{ url }"
+              class="
+                navigation-link
+                <@ if @{ :currentPath } @>current<@ end @>
+              "
+            >@{ title }</a>
+          </li>
+        <@ end @>
+      </ul>
     </li>
-    <@ newPagelist {
-      type: 'children',
-      context: '/'
-    } @>
-    <@foreach in pagelist @>
-      <li class="navigation-item">
-        <a
-          href="@{ url }"
-          class="
-            navigation-link
-            <@ if @{ :currentPath } @>navigation-link-current<@ end @>
-          "
-        >@{ title }</a>
-      </li>
-    <@ end @>
   </ul>
 </nav>

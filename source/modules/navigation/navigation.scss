@@ -1,136 +1,148 @@
 .navigation {
   position: fixed;
   inset: 0 0 auto;
-  z-index: 9;
-  padding-inline: 60px;
-  font-weight: bold;
+  z-index: 10;
   background-color: var(--grey-translucent);
-  backdrop-filter: blur(25px);
-  box-shadow: 0 2px 4px var(--shadow-color);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .navigation-list {
-  display: flex;
-  width: min(100%, 1440px);
-  height: 100px;
-  margin-inline: auto;
-  overflow-x: auto;
-  white-space: nowrap;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @media (width >= 1000px) {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    > * {
+      min-width: 0;
+    }
+  }
 }
 
-.navigation-item {
-  display: inline-flex;
-  align-self: center;
+.navigation-group {
+  display: grid;
+
+  > * {
+    min-width: 0;
+  }
+
+  &.controls {
+    padding: 20px 30px;
+
+    @media (width >= 1000px) {
+      padding: 25px 30px;
+    }
+  }
+
+  &.items {
+    grid-template-rows: 0fr;
+    padding: 0 30px;
+    transition:
+      grid-template-rows 0.3s ease-in-out,
+      padding 0.3s ease-in-out;
+    will-change: grid-template-rows, padding;
+
+    .expanded & {
+      grid-template-rows: 1fr;
+      padding: 20px 30px 25px;
+    }
+
+    @media (width >= 1000px) {
+      will-change: auto;
+      grid-template-rows: 1fr;
+      place-items: center end;
+    }
+  }
 }
 
-.navigation-item:first-of-type {
-  margin-right: auto;
+.navigation-group-list {
+  overflow: hidden;
+  list-style: none;
+
+  @media (width >= 1000px) {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+.navigation-logo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: 40px;
+
+  @media (width >= 1000px) {
+    height: 50px;
+  }
 }
 
 .navigation-link {
   position: relative;
-  display: inline-flex;
-  padding: 12.5px;
-  color: inherit;
+  font-weight: bold;
+  color: var(--white);
   text-decoration: none;
-}
 
-.navigation-link::after {
-  position: absolute;
-  inset: auto 0 0;
-  height: 3px;
-  content: "";
-  background-color: var(--red);
-  transition: transform 0.4s ease-in-out;
-  transform: scaleY(0);
-  transform-origin: bottom;
-}
+  &::after {
+    position: absolute;
+    inset: 95% 0 auto;
+    z-index: -1;
+    height: 3px;
+    content: "";
+    background-color: var(--red);
+    transition: scale 0.2s ease-in-out;
+    transform-origin: bottom;
+    scale: 1 0;
+  }
 
-.navigation-link-current::after,
-.navigation-link:hover::after {
-  transform: scaleY(1);
-}
+  &:hover,
+  &:focus-visible,
+  &.current {
+    &::after {
+      scale: 1 1;
+    }
+  }
 
-.navigation-logo {
-  height: 45px;
+  &.home {
+    grid-area: 1 / 1 / 2 / 2;
+    place-self: center start;
+
+    &::after {
+      content: none;
+    }
+  }
 }
 
 .navigation-toggle-mobile {
-  display: none;
-  font: inherit;
-  color: inherit;
-  pointer-events: none;
+  grid-area: 1 / 1 / 2 / 2;
+  place-self: center end;
   cursor: pointer;
-  background: 0;
+  background: none;
   border: 0;
+  transition: rotate 0.3s ease-in-out;
+
+  .expanded & {
+    rotate: 180deg;
+  }
+
+  @media (width >= 1000px) {
+    display: none;
+  }
 }
 
-.navigation-toggle-mobile::after {
-  display: inline-flex;
-  content: "->";
-  transition: transform 0.5s ease-in-out;
-  transform: rotate(90deg);
-}
-
-@media (width <= 1000px) {
-  .navigation.navigation-expanded {
-    transform: translateY(0);
+.navigation-item {
+  & + & {
+    margin-top: 20px;
   }
 
-  .navigation {
-    padding: 0 40px;
-    transform: translateY(calc(-1 * var(--mobile-navigation-links) * var(--mobile-navigation-link-height)));
-  }
+  @media (width >= 1000px) {
+    display: inline-block;
 
-  .navigation-animating {
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .navigation-logo {
-    height: 30px;
-  }
-
-  .navigation-list {
-    flex-wrap: wrap-reverse;
-    height: auto;
-    overflow-x: unset;
-  }
-
-  .navigation-item {
-    flex-basis: 100%;
-    align-items: center;
-    height: var(--mobile-navigation-link-height, 70px);
-  }
-
-  .navigation-item:nth-of-type(1) {
-    flex-basis: 80%;
-    justify-content: start;
-  }
-
-  .navigation-item:nth-of-type(2) {
-    flex-basis: 20%;
-    justify-content: flex-end;
-  }
-
-  .navigation-link {
-    padding: 0;
-  }
-
-  .navigation-item:first-of-type .navigation-link {
-    margin-left: 0;
-  }
-
-  .navigation-item:nth-of-type(1) .navigation-link::after,
-  .navigation-item:nth-of-type(2) .navigation-link::after {
-    content: none;
-  }
-
-  .navigation-toggle-mobile {
-    display: inline-flex;
-    pointer-events: auto;
-  }
-
-  .navigation-expanded .navigation-toggle-mobile::after {
-    transform: rotate(-90deg);
+    & + & {
+      margin-top: 0;
+      margin-left: 20px;
+    }
   }
 }

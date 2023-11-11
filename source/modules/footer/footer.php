@@ -40,7 +40,7 @@
   <div class="footer-column">
     <span class="footer-column-heading">@{ where | def('So finden Sie uns') }</span>
     <a href="@{ urlLocationPlan }" class="footer-map-link">
-      <span class="screen-reader-only">@{ labelUrlLocationPlan | def('Hier finden Sie uns auf Google Maps.') }</span>
+      <span class="sr-only">@{ labelUrlLocationPlan | def('Hier finden Sie uns auf Google Maps.') }</span>
       <img
         src="@{ imageLocationPlan }"
         class="footer-map"

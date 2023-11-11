@@ -31,11 +31,15 @@ html {
 body {
   max-width: 1440px;
   margin-inline: auto;
-  margin-top: 100px;
+  margin-top: 80px;
   font-family: var(--font-family);
   font-size: var(--font-size);
   line-height: var(--line-height);
   color: var(--white);
+
+  @media (width >= 1000px) {
+    margin-top: 100px;
+  }
 }
 
 a {
@@ -49,10 +53,4 @@ h4,
 h5,
 h6 {
   line-height: var(--line-height-heading);
-}
-
-@media (width <= 1000px) {
-  body {
-    margin-top: 70px;
-  }
 }

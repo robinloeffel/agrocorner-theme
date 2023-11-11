@@ -4,7 +4,7 @@
 <div class="splash-message">
   <div class="splash-message-content">
     <button class="splash-message-close">
-      <span class="screen-reader-only">
+      <span class="sr-only">
         @{ splashMessageClose | def('Fenster schliessen.') }
       </span>
     </button>
