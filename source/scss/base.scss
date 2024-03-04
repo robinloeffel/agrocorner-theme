@@ -8,7 +8,7 @@
   --shadow-color: rgb(0 0 0 / 20%);
 
   /* typography */
-  --font-family: inter, system-ui;
+  --font-family: "Inter Variable", system-ui, sans-serif;
   --font-size: 18px;
   --font-size-h2: 1.5em;
   --font-size-h1: 2em;
@@ -34,6 +34,7 @@ body {
   margin-top: 80px;
   font-family: var(--font-family);
   font-size: var(--font-size);
+  text-rendering: optimizelegibility;
   line-height: var(--line-height);
   color: var(--white);
 

@@ -3,6 +3,7 @@
   inset: 0 0 auto;
   z-index: 10;
   background-color: var(--grey-translucent);
+  background-blend-mode: soft-light;
   backdrop-filter: blur(10px);
   box-shadow: 0 2px 8px var(--shadow-color);
 }
@@ -50,9 +51,9 @@
     }
 
     @media (width >= 1000px) {
-      will-change: auto;
       grid-template-rows: 1fr;
       place-items: center end;
+      will-change: auto;
     }
   }
 }

@@ -1,4 +1,4 @@
-import { lazyLoad } from "../../ts/utils";
+import { lazyLoad } from "$utils";
 
 const pageTileImages = [
   ...document.querySelectorAll<HTMLLinkElement>(".page-tile")

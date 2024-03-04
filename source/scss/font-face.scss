@@ -1,7 +1,7 @@
-@font-face {
-  font-family: inter;
-  font-style: normal;
-  font-weight: 100 900;
-  src: url("@fontsource-variable/inter/files/inter-latin-wght-normal.woff2") format("woff2-variations");
-  font-display: swap;
-}
+@use "@fontsource-variable/inter/scss/mixins" as Inter;
+
+// https://fontsource.org/docs/getting-started/faces-mixin
+@include Inter.faces(
+  $subsets: "latin",
+  $directory: "@fontsource-variable/inter/files",
+);

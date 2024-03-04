@@ -1,15 +1,16 @@
 {
+  "extends": "@tsconfig/strictest/tsconfig.json",
   "compilerOptions": {
     "target": "esnext",
     "module": "esnext",
     "moduleResolution": "bundler",
-    "lib": ["esnext", "dom", "dom.iterable"],
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "skipLibCheck": true,
-    "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "outDir": "dist",
-    "noEmit": true
+    "noPropertyAccessFromIndexSignature": false,
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "paths": {
+      "$utils": ["./source/ts/utils.ts"],
+      "$modules/*": ["./source/modules/*"]
+    }
   }
 }

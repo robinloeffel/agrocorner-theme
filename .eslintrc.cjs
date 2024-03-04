@@ -1,4 +1,5 @@
-/** @type {import("eslint").Linter.Config} */
-module.exports = {
-  extends: "sweet/typescript"
-};
+const { defineConfig } = require("eslint-define-config");
+
+module.exports = defineConfig({
+  extends: "sweet"
+});

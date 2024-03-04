@@ -1,29 +1,30 @@
-import { exec } from "node:child_process";
-import esbuild from "esbuild";
-import { sassPlugin as sass } from "esbuild-sass-plugin";
-import eslint from "esbuild-plugin-eslint";
 import browserSync from "@rbnlffl/esbuild-plugin-browser-sync";
+import browserslist from "browserslist-to-esbuild";
+import esbuild from "esbuild";
+import eslint from "esbuild-plugin-eslint";
+import { sassPlugin as sass } from "esbuild-sass-plugin";
+import { exec } from "node:child_process";
 import postcss from "postcss";
-import postcssPresetEnv from "postcss-preset-env";
+import postcssEnv from "postcss-preset-env";
 
 const watch = process.argv.includes("--watch");
-const [ date ] = new Date().toISOString().split("T");
 
 /** @type {esbuild.BuildOptions} */
 const config = {
   entryPoints: [
-    "source/agrocorner.ts",
-    "source/agrocorner.scss"
+    "./source/agrocorner.ts",
+    "./source/agrocorner.scss"
   ],
-  outdir: "dist",
+  outdir: "./dist",
   bundle: true,
+  target: browserslist(),
   sourcemap: watch,
   minify: !watch,
   plugins: [
     eslint(),
     sass({
-      transform: async (source, directory) => {
-        const processor = postcss([ postcssPresetEnv() ]);
+      transform: async(source, directory) => {
+        const processor = postcss([ postcssEnv() ]);
         const { css } = await processor.process(source, {
           from: directory
         });
@@ -36,21 +37,17 @@ const config = {
       ui: false
     })
   ].filter(Boolean),
-  banner: {
-    js: `/* ${date} */`,
-    css: `/* ${date} */`
-  },
   loader: {
     ".woff2": "copy"
   },
-  assetNames: "inter"
+  assetNames: "assets/[name]"
 };
 
-exec("rm -rf dist", async () => {
+exec("rm -rf dist", async() => {
   if (watch) {
+    exec("php -S localhost:8080 -t ../..");
     const build = await esbuild.context(config);
     await build.watch();
-    exec("php -S localhost:8080 -t ../..");
   } else {
     await esbuild.build(config);
     exec("open dist");

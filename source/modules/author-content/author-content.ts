@@ -1,4 +1,4 @@
-import { fakeLazyLoad } from "../../ts/utils";
+import { fakeLazyLoad } from "$utils";
 
 const imagesToFakeLazyLoad = document.querySelectorAll<HTMLImageElement>(".author-content img");
 
