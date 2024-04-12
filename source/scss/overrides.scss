@@ -26,9 +26,9 @@
   opacity: 0.5;
 }
 
+/* important needed bc of a rule by automad */
 .am-slider-prev:hover,
 .am-slider-next:hover {
-  /* important needed bc of a rule by automad */
   opacity: 1 !important;
 }
 
@@ -54,7 +54,7 @@
   right: 1.5em;
   z-index: -1;
   align-self: center;
-  color: white;
+  color: var(--white);
   content: " ->";
   transition: transform 0.25s ease-in-out;
 }
